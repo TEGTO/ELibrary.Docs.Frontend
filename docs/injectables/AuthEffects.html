@@ -1,0 +1,847 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>elibrary.frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+          <script>
+               // Blocking script to avoid flickering dark mode
+               // Dark mode toggle button
+               var useDark = window.matchMedia('(prefers-color-scheme: dark)');
+               var darkModeState = useDark.matches;
+               var $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               var $darkModeToggles = document.querySelectorAll('.dark-mode-switch');
+               var darkModeStateLocal = localStorage.getItem('compodoc_darkmode-state');
+
+               function checkToggle(check) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].checked = check;
+                    }
+               }
+
+               function toggleDarkMode(state) {
+                    if (window.localStorage) {
+                         localStorage.setItem('compodoc_darkmode-state', state);
+                    }
+
+                    checkToggle(state);
+
+                    const hasClass = document.body.classList.contains('dark');
+
+                    if (state) {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.add('dark');
+                         }
+                         if (!hasClass) {
+                              document.body.classList.add('dark');
+                         }
+                    } else {
+                         for (var i = 0; i < $darkModeToggles.length; i++) {
+                              $darkModeToggles[i].classList.remove('dark');
+                         }
+                         if (hasClass) {
+                              document.body.classList.remove('dark');
+                         }
+                    }
+               }
+
+               useDark.addEventListener('change', function (evt) {
+                    toggleDarkMode(evt.matches);
+               });
+               if (darkModeStateLocal) {
+                    darkModeState = darkModeStateLocal === 'true';
+               }
+               toggleDarkMode(darkModeState);
+          </script>
+
+        <div class="navbar navbar-default navbar-fixed-top d-md-none p-0">
+               <div class="d-flex">
+                    <a href="../" class="navbar-brand">elibrary.frontend documentation</a>
+                    <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+               </div>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="d-none d-md-block menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >AuthEffects</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/authentication/store/auth/auth.effects.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deleteUser$" >deleteUser$</a>
+                            </li>
+                            <li>
+                                <a href="#getAuthData$" >getAuthData$</a>
+                            </li>
+                            <li>
+                                <a href="#logOutUser$" >logOutUser$</a>
+                            </li>
+                            <li>
+                                <a href="#oauthSignInUser$" >oauthSignInUser$</a>
+                            </li>
+                            <li>
+                                <a href="#refreshToken$" >refreshToken$</a>
+                            </li>
+                            <li>
+                                <a href="#registerUser$" >registerUser$</a>
+                            </li>
+                            <li>
+                                <a href="#singInUser$" >singInUser$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#storageUserAuthKey" >storageUserAuthKey</a>
+                            </li>
+                            <li>
+                                <a href="#updateUserData$" >updateUserData$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(actions$: Actions, authApiService: <a href="../injectables/AuthenticationApiService.html" target="_self">AuthenticationApiService</a>, userApiService: <a href="../injectables/UserApiService.html" target="_self">UserApiService</a>, localStorage: <a href="../injectables/LocalStorageService.html" target="_self">LocalStorageService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:9</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>actions$</td>
+                                                  
+                                                        <td>
+                                                                    <code>Actions</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationApiService.html" target="_self" >AuthenticationApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserApiService.html" target="_self" >UserApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>localStorage</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocalStorageService.html" target="_self" >LocalStorageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUser$"></a>
+                    <span class="name">
+                        <span ><b>deleteUser$</b></span>
+                        <a href="#deleteUser$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(deleteUser),
+            mergeMap(() &#x3D;&gt;
+                this.userApiService.deleteUser().pipe(
+                    map(() &#x3D;&gt; {
+                        this.localStorage.removeItem(this.storageUserAuthKey);
+                        return deleteUserSuccess();
+                    }),
+                    catchError(error &#x3D;&gt; {
+                        return of(deleteUserFailure({ error: error.message }));
+                    })
+                )
+            )
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:124</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAuthData$"></a>
+                    <span class="name">
+                        <span ><b>getAuthData$</b></span>
+                        <a href="#getAuthData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(getAuthData),
+            mergeMap(() &#x3D;&gt; {
+                const json &#x3D; this.localStorage.getItem(this.storageUserAuthKey);
+                if (json !&#x3D;&#x3D; null) {
+                    const userAuth: UserAuth &#x3D; JSON.parse(json);
+                    return of(getAuthDataSuccess({ userAuth: userAuth }));
+                }
+                else {
+                    return of(getAuthDataFailure());
+                }
+            }),
+            catchError(() &#x3D;&gt; of(getAuthDataFailure()))
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logOutUser$"></a>
+                    <span class="name">
+                        <span ><b>logOutUser$</b></span>
+                        <a href="#logOutUser$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(logOutUser),
+            mergeMap(() &#x3D;&gt; {
+                this.localStorage.removeItem(this.storageUserAuthKey);
+                return of(logOutUserSuccess());
+            })
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="oauthSignInUser$"></a>
+                    <span class="name">
+                        <span ><b>oauthSignInUser$</b></span>
+                        <a href="#oauthSignInUser$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(oauthSignInUser),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.loginUserOAuth(action.req).pipe(
+                    map((response) &#x3D;&gt; {
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(response));
+                        return signInUserSuccess({ userAuth: response });
+                    }),
+                    catchError(error &#x3D;&gt; of(signInUserFailure({ error: error.message })))
+                )
+            )
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshToken$"></a>
+                    <span class="name">
+                        <span ><b>refreshToken$</b></span>
+                        <a href="#refreshToken$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(refreshAccessToken),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.refreshToken(action.authToken).pipe(
+                    map((response) &#x3D;&gt; {
+                        const json &#x3D; this.localStorage.getItem(this.storageUserAuthKey);
+                        let userAuth: UserAuth &#x3D; JSON.parse(json!);
+                        userAuth &#x3D; copyAuthTokenToUserAuth(userAuth, response);
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(userAuth));
+                        return refreshAccessTokenSuccess({ authToken: response });
+                    }),
+                    catchError(error &#x3D;&gt; {
+                        this.localStorage.removeItem(this.storageUserAuthKey);
+                        return of(refreshAccessTokenFailure({ error: error.message }));
+                    })
+                )
+            )
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:85</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerUser$"></a>
+                    <span class="name">
+                        <span ><b>registerUser$</b></span>
+                        <a href="#registerUser$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(registerUser),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.registerUser(action.req).pipe(
+                    map((response) &#x3D;&gt; {
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(response));
+                        return registerSuccess({ userAuth: response });
+                    }),
+                    catchError(error &#x3D;&gt; of(registerFailure({ error: error.message })))
+                )
+            )
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="singInUser$"></a>
+                    <span class="name">
+                        <span ><b>singInUser$</b></span>
+                        <a href="#singInUser$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(signInUser),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.loginUser(action.req).pipe(
+                    map((response) &#x3D;&gt; {
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(response));
+                        return signInUserSuccess({ userAuth: response });
+                    }),
+                    catchError(error &#x3D;&gt; of(signInUserFailure({ error: error.message })))
+                )
+            )
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storageUserAuthKey"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>storageUserAuthKey</b></span>
+                        <a href="#storageUserAuthKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;userAuth&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:9</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUserData$"></a>
+                    <span class="name">
+                        <span ><b>updateUserData$</b></span>
+                        <a href="#updateUserData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(updateUserData),
+            mergeMap((action) &#x3D;&gt;
+                this.userApiService.updateUser(action.req).pipe(
+                    map(() &#x3D;&gt; {
+                        const json &#x3D; this.localStorage.getItem(this.storageUserAuthKey);
+                        let userAuth: UserAuth &#x3D; JSON.parse(json!);
+                        userAuth &#x3D; copyUserUpdateRequestToUserAuth(userAuth, action.req);
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(userAuth));
+                        return updateUserDataSuccess({ req: action.req });
+                    }),
+                    catchError(error &#x3D;&gt; {
+                        return of(updateUserDataFailure({ error: error.message }));
+                    })
+                )
+            )
+        )
+    )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/modules/authentication/store/auth/auth.effects.ts:105</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &quot;@angular/core&quot;;
+import { Actions, createEffect, ofType } from &quot;@ngrx/effects&quot;;
+import { catchError, map, mergeMap, of } from &quot;rxjs&quot;;
+import { deleteUser, deleteUserFailure, deleteUserSuccess, getAuthData, getAuthDataFailure, getAuthDataSuccess, logOutUser, logOutUserSuccess, oauthSignInUser, refreshAccessToken, refreshAccessTokenFailure, refreshAccessTokenSuccess, registerFailure, registerSuccess, registerUser, signInUser, signInUserFailure, signInUserSuccess, updateUserData, updateUserDataFailure, updateUserDataSuccess } from &quot;../..&quot;;
+import { AuthenticationApiService, copyAuthTokenToAuthData as copyAuthTokenToUserAuth, copyUserUpdateRequestToAuthData as copyUserUpdateRequestToUserAuth, LocalStorageService, UserApiService, UserAuth } from &quot;../../../shared&quot;;
+
+@Injectable()
+export class AuthEffects {
+    readonly storageUserAuthKey: string &#x3D; &quot;userAuth&quot;;
+
+    constructor(
+        private readonly actions$: Actions,
+        private readonly authApiService: AuthenticationApiService,
+        private readonly userApiService: UserApiService,
+        private readonly localStorage: LocalStorageService
+    ) { }
+
+    registerUser$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(registerUser),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.registerUser(action.req).pipe(
+                    map((response) &#x3D;&gt; {
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(response));
+                        return registerSuccess({ userAuth: response });
+                    }),
+                    catchError(error &#x3D;&gt; of(registerFailure({ error: error.message })))
+                )
+            )
+        )
+    );
+    singInUser$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(signInUser),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.loginUser(action.req).pipe(
+                    map((response) &#x3D;&gt; {
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(response));
+                        return signInUserSuccess({ userAuth: response });
+                    }),
+                    catchError(error &#x3D;&gt; of(signInUserFailure({ error: error.message })))
+                )
+            )
+        )
+    );
+    oauthSignInUser$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(oauthSignInUser),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.loginUserOAuth(action.req).pipe(
+                    map((response) &#x3D;&gt; {
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(response));
+                        return signInUserSuccess({ userAuth: response });
+                    }),
+                    catchError(error &#x3D;&gt; of(signInUserFailure({ error: error.message })))
+                )
+            )
+        )
+    );
+    getAuthData$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(getAuthData),
+            mergeMap(() &#x3D;&gt; {
+                const json &#x3D; this.localStorage.getItem(this.storageUserAuthKey);
+                if (json !&#x3D;&#x3D; null) {
+                    const userAuth: UserAuth &#x3D; JSON.parse(json);
+                    return of(getAuthDataSuccess({ userAuth: userAuth }));
+                }
+                else {
+                    return of(getAuthDataFailure());
+                }
+            }),
+            catchError(() &#x3D;&gt; of(getAuthDataFailure()))
+        )
+    );
+    logOutUser$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(logOutUser),
+            mergeMap(() &#x3D;&gt; {
+                this.localStorage.removeItem(this.storageUserAuthKey);
+                return of(logOutUserSuccess());
+            })
+        )
+    );
+    refreshToken$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(refreshAccessToken),
+            mergeMap((action) &#x3D;&gt;
+                this.authApiService.refreshToken(action.authToken).pipe(
+                    map((response) &#x3D;&gt; {
+                        const json &#x3D; this.localStorage.getItem(this.storageUserAuthKey);
+                        let userAuth: UserAuth &#x3D; JSON.parse(json!);
+                        userAuth &#x3D; copyAuthTokenToUserAuth(userAuth, response);
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(userAuth));
+                        return refreshAccessTokenSuccess({ authToken: response });
+                    }),
+                    catchError(error &#x3D;&gt; {
+                        this.localStorage.removeItem(this.storageUserAuthKey);
+                        return of(refreshAccessTokenFailure({ error: error.message }));
+                    })
+                )
+            )
+        )
+    );
+    updateUserData$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(updateUserData),
+            mergeMap((action) &#x3D;&gt;
+                this.userApiService.updateUser(action.req).pipe(
+                    map(() &#x3D;&gt; {
+                        const json &#x3D; this.localStorage.getItem(this.storageUserAuthKey);
+                        let userAuth: UserAuth &#x3D; JSON.parse(json!);
+                        userAuth &#x3D; copyUserUpdateRequestToUserAuth(userAuth, action.req);
+                        this.localStorage.setItem(this.storageUserAuthKey, JSON.stringify(userAuth));
+                        return updateUserDataSuccess({ req: action.req });
+                    }),
+                    catchError(error &#x3D;&gt; {
+                        return of(updateUserDataFailure({ error: error.message }));
+                    })
+                )
+            )
+        )
+    );
+    deleteUser$ &#x3D; createEffect(() &#x3D;&gt;
+        this.actions$.pipe(
+            ofType(deleteUser),
+            mergeMap(() &#x3D;&gt;
+                this.userApiService.deleteUser().pipe(
+                    map(() &#x3D;&gt; {
+                        this.localStorage.removeItem(this.storageUserAuthKey);
+                        return deleteUserSuccess();
+                    }),
+                    catchError(error &#x3D;&gt; {
+                        return of(deleteUserFailure({ error: error.message }));
+                    })
+                )
+            )
+        )
+    );
+}</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthEffects.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script>
+               $darkModeToggleSwitchers = document.querySelectorAll('.dark-mode-switch input');
+               checkToggle(darkModeState);
+               if ($darkModeToggleSwitchers.length > 0) {
+                    for (var i = 0; i < $darkModeToggleSwitchers.length; i++) {
+                         $darkModeToggleSwitchers[i].addEventListener('change', function (event) {
+                              darkModeState = !darkModeState;
+                              toggleDarkMode(darkModeState);
+                         });
+                    }
+               }
+          </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
