@@ -24,211 +24,211 @@
 <title>cluster_ManagerModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-195 2651,-195 2651,-70 8,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_ManagerModule_declarations</title>
-<polygon fill="none" stroke="black" points="859,-78 859,-130 2643,-130 2643,-78 859,-78"/>
-</g>
 <g id="clust13" class="cluster">
 <title>cluster_ManagerModule_imports</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 851,-130 851,-78 16,-78"/>
+<polygon fill="none" stroke="black" points="1808,-78 1808,-130 2643,-130 2643,-78 1808,-78"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_ManagerModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 1800,-130 1800,-78 16,-78"/>
 </g>
 <!-- AuthorTableComponent -->
 <g id="node1" class="node">
 <title>AuthorTableComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2635.36,-122 2482.64,-122 2482.64,-86 2635.36,-86 2635.36,-122"/>
-<text text-anchor="middle" x="2559" y="-99.8" font-family="Times,serif" font-size="14.00">AuthorTableComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1792.36,-122 1639.64,-122 1639.64,-86 1792.36,-86 1792.36,-122"/>
+<text text-anchor="middle" x="1716" y="-99.8" font-family="Times,serif" font-size="14.00">AuthorTableComponent</text>
 </g>
 <!-- ManagerModule -->
 <g id="node11" class="node">
 <title>ManagerModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1271.8,-187 1268.8,-191 1247.8,-191 1244.8,-187 1162.2,-187 1162.2,-151 1271.8,-151 1271.8,-187"/>
-<text text-anchor="middle" x="1217" y="-164.8" font-family="Times,serif" font-size="14.00">ManagerModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1485.8,-187 1482.8,-191 1461.8,-191 1458.8,-187 1376.2,-187 1376.2,-151 1485.8,-151 1485.8,-187"/>
+<text text-anchor="middle" x="1431" y="-164.8" font-family="Times,serif" font-size="14.00">ManagerModule</text>
 </g>
 <!-- AuthorTableComponent&#45;&gt;ManagerModule -->
 <g id="edge1" class="edge">
 <title>AuthorTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M2559,-122.32C2559,-145.66 2559,-183 2559,-183 2559,-183 1281.69,-183 1281.69,-183"/>
-<polygon fill="black" stroke="black" points="1281.69,-179.5 1271.69,-183 1281.69,-186.5 1281.69,-179.5"/>
+<path fill="none" stroke="black" d="M1716,-122.19C1716,-137.18 1716,-156 1716,-156 1716,-156 1495.95,-156 1495.95,-156"/>
+<polygon fill="black" stroke="black" points="1495.95,-152.5 1485.95,-156 1495.95,-159.5 1495.95,-152.5"/>
 </g>
 <!-- BookStockDetailsComponent -->
 <g id="node2" class="node">
 <title>BookStockDetailsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2464.71,-122 2281.29,-122 2281.29,-86 2464.71,-86 2464.71,-122"/>
-<text text-anchor="middle" x="2373" y="-99.8" font-family="Times,serif" font-size="14.00">BookStockDetailsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1621.71,-122 1438.29,-122 1438.29,-86 1621.71,-86 1621.71,-122"/>
+<text text-anchor="middle" x="1530" y="-99.8" font-family="Times,serif" font-size="14.00">BookStockDetailsComponent</text>
 </g>
 <!-- BookStockDetailsComponent&#45;&gt;ManagerModule -->
 <g id="edge2" class="edge">
 <title>BookStockDetailsComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M2373,-122.29C2373,-144.21 2373,-178 2373,-178 2373,-178 1281.98,-178 1281.98,-178"/>
-<polygon fill="black" stroke="black" points="1281.98,-174.5 1271.98,-178 1281.98,-181.5 1281.98,-174.5"/>
+<path fill="none" stroke="black" d="M1462.02,-122.11C1462.02,-122.11 1462.02,-140.99 1462.02,-140.99"/>
+<polygon fill="black" stroke="black" points="1458.52,-140.99 1462.02,-150.99 1465.52,-140.99 1458.52,-140.99"/>
 </g>
 <!-- BookStockTableComponent -->
 <g id="node3" class="node">
 <title>BookStockTableComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2263.93,-122 2088.07,-122 2088.07,-86 2263.93,-86 2263.93,-122"/>
-<text text-anchor="middle" x="2176" y="-99.8" font-family="Times,serif" font-size="14.00">BookStockTableComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1420.93,-122 1245.07,-122 1245.07,-86 1420.93,-86 1420.93,-122"/>
+<text text-anchor="middle" x="1333" y="-99.8" font-family="Times,serif" font-size="14.00">BookStockTableComponent</text>
 </g>
 <!-- BookStockTableComponent&#45;&gt;ManagerModule -->
 <g id="edge3" class="edge">
 <title>BookStockTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M2176,-122.03C2176,-142.77 2176,-174 2176,-174 2176,-174 1281.66,-174 1281.66,-174"/>
-<polygon fill="black" stroke="black" points="1281.66,-170.5 1271.66,-174 1281.66,-177.5 1281.66,-170.5"/>
+<path fill="none" stroke="black" d="M1398.53,-122.11C1398.53,-122.11 1398.53,-140.99 1398.53,-140.99"/>
+<polygon fill="black" stroke="black" points="1395.03,-140.99 1398.53,-150.99 1402.03,-140.99 1395.03,-140.99"/>
 </g>
 <!-- BookTableComponent -->
 <g id="node4" class="node">
 <title>BookTableComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2070.54,-122 1927.46,-122 1927.46,-86 2070.54,-86 2070.54,-122"/>
-<text text-anchor="middle" x="1999" y="-99.8" font-family="Times,serif" font-size="14.00">BookTableComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1227.54,-122 1084.46,-122 1084.46,-86 1227.54,-86 1227.54,-122"/>
+<text text-anchor="middle" x="1156" y="-99.8" font-family="Times,serif" font-size="14.00">BookTableComponent</text>
 </g>
 <!-- BookTableComponent&#45;&gt;ManagerModule -->
 <g id="edge4" class="edge">
 <title>BookTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M1999,-122.11C1999,-141.34 1999,-169 1999,-169 1999,-169 1281.68,-169 1281.68,-169"/>
-<polygon fill="black" stroke="black" points="1281.68,-165.5 1271.68,-169 1281.68,-172.5 1281.68,-165.5"/>
+<path fill="none" stroke="black" d="M1156,-122.19C1156,-137.18 1156,-156 1156,-156 1156,-156 1366.34,-156 1366.34,-156"/>
+<polygon fill="black" stroke="black" points="1366.34,-159.5 1376.34,-156 1366.34,-152.5 1366.34,-159.5"/>
 </g>
 <!-- GenreTableComponent -->
 <g id="node5" class="node">
 <title>GenreTableComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1909.9,-122 1762.1,-122 1762.1,-86 1909.9,-86 1909.9,-122"/>
-<text text-anchor="middle" x="1836" y="-99.8" font-family="Times,serif" font-size="14.00">GenreTableComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1066.9,-122 919.1,-122 919.1,-86 1066.9,-86 1066.9,-122"/>
+<text text-anchor="middle" x="993" y="-99.8" font-family="Times,serif" font-size="14.00">GenreTableComponent</text>
 </g>
 <!-- GenreTableComponent&#45;&gt;ManagerModule -->
 <g id="edge5" class="edge">
 <title>GenreTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M1836,-122.3C1836,-140.27 1836,-165 1836,-165 1836,-165 1281.66,-165 1281.66,-165"/>
-<polygon fill="black" stroke="black" points="1281.66,-161.5 1271.66,-165 1281.66,-168.5 1281.66,-161.5"/>
+<path fill="none" stroke="black" d="M993,-122.03C993,-138.4 993,-160 993,-160 993,-160 1365.97,-160 1365.97,-160"/>
+<polygon fill="black" stroke="black" points="1365.97,-163.5 1375.97,-160 1365.97,-156.5 1365.97,-163.5"/>
 </g>
 <!-- ManagerTableComponent -->
 <g id="node6" class="node">
 <title>ManagerTableComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1744.45,-122 1581.55,-122 1581.55,-86 1744.45,-86 1744.45,-122"/>
-<text text-anchor="middle" x="1663" y="-99.8" font-family="Times,serif" font-size="14.00">ManagerTableComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="901.45,-122 738.55,-122 738.55,-86 901.45,-86 901.45,-122"/>
+<text text-anchor="middle" x="820" y="-99.8" font-family="Times,serif" font-size="14.00">ManagerTableComponent</text>
 </g>
 <!-- ManagerTableComponent&#45;&gt;ManagerModule -->
 <g id="edge6" class="edge">
 <title>ManagerTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M1663,-122.03C1663,-138.4 1663,-160 1663,-160 1663,-160 1281.69,-160 1281.69,-160"/>
-<polygon fill="black" stroke="black" points="1281.69,-156.5 1271.69,-160 1281.69,-163.5 1281.69,-156.5"/>
+<path fill="none" stroke="black" d="M820,-122.3C820,-140.27 820,-165 820,-165 820,-165 1366.24,-165 1366.24,-165"/>
+<polygon fill="black" stroke="black" points="1366.24,-168.5 1376.24,-165 1366.24,-161.5 1366.24,-168.5"/>
 </g>
 <!-- OrderDetailsComponent -->
 <g id="node7" class="node">
 <title>OrderDetailsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1563.63,-122 1410.37,-122 1410.37,-86 1563.63,-86 1563.63,-122"/>
-<text text-anchor="middle" x="1487" y="-99.8" font-family="Times,serif" font-size="14.00">OrderDetailsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="720.63,-122 567.37,-122 567.37,-86 720.63,-86 720.63,-122"/>
+<text text-anchor="middle" x="644" y="-99.8" font-family="Times,serif" font-size="14.00">OrderDetailsComponent</text>
 </g>
 <!-- OrderDetailsComponent&#45;&gt;ManagerModule -->
 <g id="edge7" class="edge">
 <title>OrderDetailsComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M1487,-122.19C1487,-137.18 1487,-156 1487,-156 1487,-156 1281.96,-156 1281.96,-156"/>
-<polygon fill="black" stroke="black" points="1281.96,-152.5 1271.96,-156 1281.96,-159.5 1281.96,-152.5"/>
+<path fill="none" stroke="black" d="M644,-122.11C644,-141.34 644,-169 644,-169 644,-169 1366.28,-169 1366.28,-169"/>
+<polygon fill="black" stroke="black" points="1366.28,-172.5 1376.28,-169 1366.28,-165.5 1366.28,-172.5"/>
 </g>
 <!-- PublisherTableComponent -->
 <g id="node8" class="node">
 <title>PublisherTableComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1392.09,-122 1225.91,-122 1225.91,-86 1392.09,-86 1392.09,-122"/>
-<text text-anchor="middle" x="1309" y="-99.8" font-family="Times,serif" font-size="14.00">PublisherTableComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="549.09,-122 382.91,-122 382.91,-86 549.09,-86 549.09,-122"/>
+<text text-anchor="middle" x="466" y="-99.8" font-family="Times,serif" font-size="14.00">PublisherTableComponent</text>
 </g>
 <!-- PublisherTableComponent&#45;&gt;ManagerModule -->
 <g id="edge8" class="edge">
 <title>PublisherTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M1248.8,-122.11C1248.8,-122.11 1248.8,-140.99 1248.8,-140.99"/>
-<polygon fill="black" stroke="black" points="1245.3,-140.99 1248.8,-150.99 1252.3,-140.99 1245.3,-140.99"/>
+<path fill="none" stroke="black" d="M466,-122.03C466,-142.77 466,-174 466,-174 466,-174 1366,-174 1366,-174"/>
+<polygon fill="black" stroke="black" points="1366,-177.5 1376,-174 1366,-170.5 1366,-177.5"/>
 </g>
 <!-- StatisticsChartComponent -->
 <g id="node9" class="node">
 <title>StatisticsChartComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1207.49,-122 1044.51,-122 1044.51,-86 1207.49,-86 1207.49,-122"/>
-<text text-anchor="middle" x="1126" y="-99.8" font-family="Times,serif" font-size="14.00">StatisticsChartComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="364.49,-122 201.51,-122 201.51,-86 364.49,-86 364.49,-122"/>
+<text text-anchor="middle" x="283" y="-99.8" font-family="Times,serif" font-size="14.00">StatisticsChartComponent</text>
 </g>
 <!-- StatisticsChartComponent&#45;&gt;ManagerModule -->
 <g id="edge9" class="edge">
 <title>StatisticsChartComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M1184.92,-122.11C1184.92,-122.11 1184.92,-140.99 1184.92,-140.99"/>
-<polygon fill="black" stroke="black" points="1181.42,-140.99 1184.92,-150.99 1188.42,-140.99 1181.42,-140.99"/>
+<path fill="none" stroke="black" d="M283,-122.29C283,-144.21 283,-178 283,-178 283,-178 1366.02,-178 1366.02,-178"/>
+<polygon fill="black" stroke="black" points="1366.02,-181.5 1376.02,-178 1366.02,-174.5 1366.02,-181.5"/>
 </g>
 <!-- StatisticsPageComponent -->
 <g id="node10" class="node">
 <title>StatisticsPageComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1026.6,-122 867.4,-122 867.4,-86 1026.6,-86 1026.6,-122"/>
-<text text-anchor="middle" x="947" y="-99.8" font-family="Times,serif" font-size="14.00">StatisticsPageComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="183.6,-122 24.4,-122 24.4,-86 183.6,-86 183.6,-122"/>
+<text text-anchor="middle" x="104" y="-99.8" font-family="Times,serif" font-size="14.00">StatisticsPageComponent</text>
 </g>
 <!-- StatisticsPageComponent&#45;&gt;ManagerModule -->
 <g id="edge10" class="edge">
 <title>StatisticsPageComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M947,-122.19C947,-137.18 947,-156 947,-156 947,-156 1152.04,-156 1152.04,-156"/>
-<polygon fill="black" stroke="black" points="1152.04,-159.5 1162.04,-156 1152.04,-152.5 1152.04,-159.5"/>
+<path fill="none" stroke="black" d="M104,-122.32C104,-145.66 104,-183 104,-183 104,-183 1366.09,-183 1366.09,-183"/>
+<polygon fill="black" stroke="black" points="1366.09,-186.5 1376.09,-183 1366.09,-179.5 1366.09,-186.5"/>
 </g>
 <!-- GenericTableComponent -->
 <g id="node12" class="node">
 <title>GenericTableComponent</title>
-<polygon fill="#8dd3c7" stroke="black" points="842.51,-122 839.51,-126 818.51,-126 815.51,-122 685.49,-122 685.49,-86 842.51,-86 842.51,-122"/>
-<text text-anchor="middle" x="764" y="-99.8" font-family="Times,serif" font-size="14.00">GenericTableComponent</text>
+<polygon fill="#8dd3c7" stroke="black" points="2634.51,-122 2631.51,-126 2610.51,-126 2607.51,-122 2477.49,-122 2477.49,-86 2634.51,-86 2634.51,-122"/>
+<text text-anchor="middle" x="2556" y="-99.8" font-family="Times,serif" font-size="14.00">GenericTableComponent</text>
 </g>
 <!-- GenericTableComponent&#45;&gt;ManagerModule -->
 <g id="edge11" class="edge">
 <title>GenericTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M764,-122.03C764,-138.4 764,-160 764,-160 764,-160 1151.91,-160 1151.91,-160"/>
-<polygon fill="black" stroke="black" points="1151.91,-163.5 1161.91,-160 1151.91,-156.5 1151.91,-163.5"/>
+<path fill="none" stroke="black" d="M2556,-122.32C2556,-145.66 2556,-183 2556,-183 2556,-183 1496.02,-183 1496.02,-183"/>
+<polygon fill="black" stroke="black" points="1496.02,-179.5 1486.02,-183 1496.02,-186.5 1496.02,-179.5"/>
 </g>
 <!-- LibraryModule -->
 <g id="node13" class="node">
 <title>LibraryModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="666.53,-122 663.53,-126 642.53,-126 639.53,-122 565.47,-122 565.47,-86 666.53,-86 666.53,-122"/>
-<text text-anchor="middle" x="616" y="-99.8" font-family="Times,serif" font-size="14.00">LibraryModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="2458.53,-122 2455.53,-126 2434.53,-126 2431.53,-122 2357.47,-122 2357.47,-86 2458.53,-86 2458.53,-122"/>
+<text text-anchor="middle" x="2408" y="-99.8" font-family="Times,serif" font-size="14.00">LibraryModule</text>
 </g>
 <!-- LibraryModule&#45;&gt;ManagerModule -->
 <g id="edge12" class="edge">
 <title>LibraryModule&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M616,-122.3C616,-140.27 616,-165 616,-165 616,-165 1152.34,-165 1152.34,-165"/>
-<polygon fill="black" stroke="black" points="1152.34,-168.5 1162.34,-165 1152.34,-161.5 1152.34,-168.5"/>
+<path fill="none" stroke="black" d="M2408,-122.29C2408,-144.21 2408,-178 2408,-178 2408,-178 1495.97,-178 1495.97,-178"/>
+<polygon fill="black" stroke="black" points="1495.97,-174.5 1485.97,-178 1495.97,-181.5 1495.97,-174.5"/>
 </g>
 <!-- LoadingComponent -->
 <g id="node14" class="node">
 <title>LoadingComponent</title>
-<polygon fill="#8dd3c7" stroke="black" points="546.99,-122 543.99,-126 522.99,-126 519.99,-122 419.01,-122 419.01,-86 546.99,-86 546.99,-122"/>
-<text text-anchor="middle" x="483" y="-99.8" font-family="Times,serif" font-size="14.00">LoadingComponent</text>
+<polygon fill="#8dd3c7" stroke="black" points="2338.99,-122 2335.99,-126 2314.99,-126 2311.99,-122 2211.01,-122 2211.01,-86 2338.99,-86 2338.99,-122"/>
+<text text-anchor="middle" x="2275" y="-99.8" font-family="Times,serif" font-size="14.00">LoadingComponent</text>
 </g>
 <!-- LoadingComponent&#45;&gt;ManagerModule -->
 <g id="edge13" class="edge">
 <title>LoadingComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M483,-122.11C483,-141.34 483,-169 483,-169 483,-169 1152.13,-169 1152.13,-169"/>
-<polygon fill="black" stroke="black" points="1152.13,-172.5 1162.13,-169 1152.13,-165.5 1152.13,-172.5"/>
+<path fill="none" stroke="black" d="M2275,-122.03C2275,-142.77 2275,-174 2275,-174 2275,-174 1495.73,-174 1495.73,-174"/>
+<polygon fill="black" stroke="black" points="1495.73,-170.5 1485.73,-174 1495.73,-177.5 1495.73,-170.5"/>
 </g>
 <!-- OrderTableComponent -->
 <g id="node15" class="node">
 <title>OrderTableComponent</title>
-<polygon fill="#8dd3c7" stroke="black" points="400.85,-122 397.85,-126 376.85,-126 373.85,-122 255.15,-122 255.15,-86 400.85,-86 400.85,-122"/>
-<text text-anchor="middle" x="328" y="-99.8" font-family="Times,serif" font-size="14.00">OrderTableComponent</text>
+<polygon fill="#8dd3c7" stroke="black" points="2192.85,-122 2189.85,-126 2168.85,-126 2165.85,-122 2047.15,-122 2047.15,-86 2192.85,-86 2192.85,-122"/>
+<text text-anchor="middle" x="2120" y="-99.8" font-family="Times,serif" font-size="14.00">OrderTableComponent</text>
 </g>
 <!-- OrderTableComponent&#45;&gt;ManagerModule -->
 <g id="edge14" class="edge">
 <title>OrderTableComponent&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M328,-122.03C328,-142.77 328,-174 328,-174 328,-174 1152.06,-174 1152.06,-174"/>
-<polygon fill="black" stroke="black" points="1152.06,-177.5 1162.06,-174 1152.06,-170.5 1152.06,-177.5"/>
+<path fill="none" stroke="black" d="M2120,-122.11C2120,-141.34 2120,-169 2120,-169 2120,-169 1495.93,-169 1495.93,-169"/>
+<polygon fill="black" stroke="black" points="1495.93,-165.5 1485.93,-169 1495.93,-172.5 1495.93,-165.5"/>
 </g>
 <!-- PlaceholderPipe -->
 <g id="node16" class="node">
 <title>PlaceholderPipe</title>
-<polygon fill="#8dd3c7" stroke="black" points="237.47,-122 234.47,-126 213.47,-126 210.47,-122 130.53,-122 130.53,-86 237.47,-86 237.47,-122"/>
-<text text-anchor="middle" x="184" y="-99.8" font-family="Times,serif" font-size="14.00">PlaceholderPipe</text>
+<polygon fill="#8dd3c7" stroke="black" points="2029.47,-122 2026.47,-126 2005.47,-126 2002.47,-122 1922.53,-122 1922.53,-86 2029.47,-86 2029.47,-122"/>
+<text text-anchor="middle" x="1976" y="-99.8" font-family="Times,serif" font-size="14.00">PlaceholderPipe</text>
 </g>
 <!-- PlaceholderPipe&#45;&gt;ManagerModule -->
 <g id="edge15" class="edge">
 <title>PlaceholderPipe&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M184,-122.29C184,-144.21 184,-178 184,-178 184,-178 1152.19,-178 1152.19,-178"/>
-<polygon fill="black" stroke="black" points="1152.19,-181.5 1162.19,-178 1152.19,-174.5 1152.19,-181.5"/>
+<path fill="none" stroke="black" d="M1976,-122.3C1976,-140.27 1976,-165 1976,-165 1976,-165 1495.75,-165 1495.75,-165"/>
+<polygon fill="black" stroke="black" points="1495.75,-161.5 1485.75,-165 1495.75,-168.5 1495.75,-161.5"/>
 </g>
 <!-- ShopModule -->
 <g id="node17" class="node">
 <title>ShopModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="112.33,-122 109.33,-126 88.33,-126 85.33,-122 23.67,-122 23.67,-86 112.33,-86 112.33,-122"/>
-<text text-anchor="middle" x="68" y="-99.8" font-family="Times,serif" font-size="14.00">ShopModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1904.33,-122 1901.33,-126 1880.33,-126 1877.33,-122 1815.67,-122 1815.67,-86 1904.33,-86 1904.33,-122"/>
+<text text-anchor="middle" x="1860" y="-99.8" font-family="Times,serif" font-size="14.00">ShopModule</text>
 </g>
 <!-- ShopModule&#45;&gt;ManagerModule -->
 <g id="edge16" class="edge">
 <title>ShopModule&#45;&gt;ManagerModule</title>
-<path fill="none" stroke="black" d="M68,-122.32C68,-145.66 68,-183 68,-183 68,-183 1151.97,-183 1151.97,-183"/>
-<polygon fill="black" stroke="black" points="1151.97,-186.5 1161.97,-183 1151.97,-179.5 1151.97,-186.5"/>
+<path fill="none" stroke="black" d="M1860,-122.03C1860,-138.4 1860,-160 1860,-160 1860,-160 1495.77,-160 1495.77,-160"/>
+<polygon fill="black" stroke="black" points="1495.77,-156.5 1485.77,-160 1495.77,-163.5 1495.77,-156.5"/>
 </g>
 </g>
 </svg>
