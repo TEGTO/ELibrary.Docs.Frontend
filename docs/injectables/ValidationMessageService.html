@@ -268,8 +268,8 @@
                     <td class="col-md-4">
                         <i>Default value : </i><code>{
     required: &quot;Field is required.&quot;,
-    email: &quot;Email must be valid.&quot;,
-    invalidPhone: &quot;Phone number must be valid.&quot;,
+    email: &quot;Email must be in the form: example@mail.com.&quot;,
+    invalidPhone: &quot;Phone number must be the form: 0123456789.&quot;,
     minlength: &quot;Input must have more characters.&quot;,
     maxlength: &quot;Input must have less characters.&quot;,
     nonAlphanumeric: &quot;Input must have non-alphanumeric characters.&quot;,
@@ -315,8 +315,8 @@ import { ValidationMessage } from &#x27;./validation-message&#x27;;
 export class ValidationMessageService implements ValidationMessage {
   private readonly errorMessages: Record&lt;string, string&gt; &#x3D; {
     required: &quot;Field is required.&quot;,
-    email: &quot;Email must be valid.&quot;,
-    invalidPhone: &quot;Phone number must be valid.&quot;,
+    email: &quot;Email must be in the form: example@mail.com.&quot;,
+    invalidPhone: &quot;Phone number must be the form: 0123456789.&quot;,
     minlength: &quot;Input must have more characters.&quot;,
     maxlength: &quot;Input must have less characters.&quot;,
     nonAlphanumeric: &quot;Input must have non-alphanumeric characters.&quot;,
