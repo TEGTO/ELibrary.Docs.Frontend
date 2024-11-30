@@ -263,7 +263,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getItem(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, decryptValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+<code>getItem(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, decryptValue)</code>
                 </td>
             </tr>
 
@@ -309,7 +309,6 @@
                                         <tr>
                                                 <td>decryptValue</td>
                                             <td>
-                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
                                             </td>
 
                                             <td>
@@ -415,7 +414,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>setItem(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, ecryptValue: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+<code>setItem(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, ecryptValue)</code>
                 </td>
             </tr>
 
@@ -475,7 +474,6 @@
                                         <tr>
                                                 <td>ecryptValue</td>
                                             <td>
-                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
                                             </td>
 
                                             <td>
@@ -519,13 +517,13 @@ export class LocalStorageService {
     private readonly encryptor: Encryptor
   ) { }
 
-  setItem(key: string, value: string, ecryptValue: boolean &#x3D; true): void {
+  setItem(key: string, value: string, ecryptValue &#x3D; true): void {
     if (ecryptValue) {
       value &#x3D; this.encryptor.encryptString(value);
     }
     localStorage.setItem(key, value);
   }
-  getItem(key: string, decryptValue: boolean &#x3D; true): string | null {
+  getItem(key: string, decryptValue &#x3D; true): string | null {
     let value &#x3D; localStorage.getItem(key);
     if (decryptValue &amp;&amp; value) {
       value &#x3D; this.encryptor.decryptString(value);

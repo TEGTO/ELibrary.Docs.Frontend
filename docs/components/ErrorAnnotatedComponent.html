@@ -158,8 +158,6 @@
                 <td class="col-md-3">imports</td>
                 <td class="col-md-9">
                             <code>MatButtonModule</code>
-                            <code>MatSnackBarLabel</code>
-                            <code>MatSnackBarActions</code>
                             <code>MatSnackBarAction</code>
                             <code>CommonModule</code>
                 </td>
@@ -350,12 +348,12 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CommonModule } from &#x27;@angular/common&#x27;;
 import { ChangeDetectionStrategy, Component, Inject, inject } from &#x27;@angular/core&#x27;;
 import { MatButtonModule } from &#x27;@angular/material/button&#x27;;
-import { MAT_SNACK_BAR_DATA, MatSnackBarAction, MatSnackBarActions, MatSnackBarLabel, MatSnackBarRef } from &#x27;@angular/material/snack-bar&#x27;;
+import { MAT_SNACK_BAR_DATA, MatSnackBarAction, MatSnackBarRef } from &#x27;@angular/material/snack-bar&#x27;;
 
 @Component({
   selector: &#x27;app-error-annotated&#x27;,
   standalone: true,
-  imports: [MatButtonModule, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction, CommonModule],
+  imports: [MatButtonModule, MatSnackBarAction, CommonModule],
   templateUrl: &#x27;./error-annotated.component.html&#x27;,
   styleUrl: &#x27;./error-annotated.component.scss&#x27;,
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -366,7 +364,7 @@ export class ErrorAnnotatedComponent {
   get messages() { return this.data.messages; }
 
   constructor(
-    @Inject(MAT_SNACK_BAR_DATA) private data: any
+    @Inject(MAT_SNACK_BAR_DATA) private readonly data: any
   ) { }
 
 }

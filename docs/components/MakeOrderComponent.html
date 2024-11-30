@@ -246,6 +246,9 @@
                                 <a href="#getCartBookPrice" >getCartBookPrice</a>
                             </li>
                             <li>
+                                <a href="#getCoverUrl" >getCoverUrl</a>
+                            </li>
+                            <li>
                                 <a href="#getDeliveryAddressFieldName" >getDeliveryAddressFieldName</a>
                             </li>
                             <li>
@@ -334,12 +337,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(validateInput: <a href="../injectables/ValidationMessage.html" target="_self">ValidationMessage</a>, clientService: <a href="../injectables/ClientService.html" target="_self">ClientService</a>, currencyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, cartService: <a href="../injectables/CartService.html" target="_self">CartService</a>, addOrderHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;ClientAddOrderCommand&gt;</a>)</code>
+<code>constructor(validateInput: <a href="../injectables/ValidationMessage.html" target="_self">ValidationMessage</a>, clientService: <a href="../injectables/ClientService.html" target="_self">ClientService</a>, currencyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, cartService: <a href="../injectables/CartService.html" target="_self">CartService</a>, addOrderHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;ClientAddOrderCommand&gt;</a>, fallbackImagePipe: <a href="../injectables/BookFallbackCoverPipe.html" target="_self">BookFallbackCoverPipe</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -416,6 +419,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>fallbackImagePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BookFallbackCoverPipe.html" target="_self" >BookFallbackCoverPipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -454,8 +469,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="125"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:125</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="127"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:127</a></div>
                         </td>
                     </tr>
 
@@ -521,8 +536,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="76"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:76</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="78"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:78</a></div>
                         </td>
                     </tr>
 
@@ -588,8 +603,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="83"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:83</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="85"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:85</a></div>
                         </td>
                     </tr>
 
@@ -655,8 +670,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="128"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:128</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="130"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:130</a></div>
                         </td>
                     </tr>
 
@@ -706,6 +721,73 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getCoverUrl"></a>
+                    <span class="name">
+                        <span ><b>getCoverUrl</b></span>
+                        <a href="#getCoverUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCoverUrl(cartBook: <a href="../interfaces/CartBook.html" target="_self">CartBook</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="134"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:134</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>cartBook</td>
+                                            <td>
+                                                            <code><a href="../interfaces/CartBook.html" target="_self" >CartBook</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="getDeliveryAddressFieldName"></a>
                     <span class="name">
                         <span ><b>getDeliveryAddressFieldName</b></span>
@@ -722,8 +804,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="91"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:91</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="93"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:93</a></div>
                         </td>
                     </tr>
 
@@ -759,8 +841,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="86"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:86</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="88"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:88</a></div>
                         </td>
                     </tr>
 
@@ -826,8 +908,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="59"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:59</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="61"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -893,8 +975,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="100"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:100</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="102"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:102</a></div>
                         </td>
                     </tr>
 
@@ -960,8 +1042,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="46"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:46</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="48"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:48</a></div>
                         </td>
                     </tr>
 
@@ -990,15 +1072,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onErrorImage(event: Event)</code>
+<code>onErrorImage(cartBook: <a href="../interfaces/CartBook.html" target="_self">CartBook</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="131"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:131</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="138"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:138</a></div>
                         </td>
                     </tr>
 
@@ -1019,9 +1101,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>event</td>
+                                                <td>cartBook</td>
                                             <td>
-                                                        <code>Event</code>
+                                                            <code><a href="../interfaces/CartBook.html" target="_self" >CartBook</a></code>
                                             </td>
 
                                             <td>
@@ -1064,8 +1146,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="80"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:80</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="82"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:82</a></div>
                         </td>
                     </tr>
 
@@ -1143,8 +1225,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="72"
-                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:72</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="74"
+                                    class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:74</a></div>
                         </td>
                     </tr>
 
@@ -1221,7 +1303,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -1247,7 +1329,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:24</a></div>
                         </td>
                     </tr>
 
@@ -1273,7 +1355,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:21</a></div>
                         </td>
                     </tr>
 
@@ -1305,7 +1387,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -1331,7 +1413,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:22</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -1357,7 +1439,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -1389,7 +1471,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:19</a></div>
                         </td>
                     </tr>
 
@@ -1421,7 +1503,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -1450,7 +1532,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:26</a></div>
                                 </td>
                             </tr>
 
@@ -1472,7 +1554,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:27</a></div>
                                 </td>
                             </tr>
 
@@ -1494,7 +1576,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:28</a></div>
                                 </td>
                             </tr>
 
@@ -1516,7 +1598,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:29</a></div>
                                 </td>
                             </tr>
 
@@ -1538,7 +1620,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:30</a></div>
                                 </td>
                             </tr>
 
@@ -1560,7 +1642,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:31</a></div>
                                 </td>
                             </tr>
 
@@ -1582,7 +1664,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:31</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:32</a></div>
                                 </td>
                             </tr>
 
@@ -1604,7 +1686,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:33</a></div>
                                 </td>
                             </tr>
 
@@ -1626,7 +1708,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:34</a></div>
                                 </td>
                             </tr>
 
@@ -1648,7 +1730,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:35</a></div>
                                 </td>
                             </tr>
 
@@ -1670,7 +1752,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:35</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:36</a></div>
                                 </td>
                             </tr>
 
@@ -1692,7 +1774,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:36</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/client/components/make-order/make-order.component.ts:37</a></div>
                                 </td>
                             </tr>
 
@@ -1707,6 +1789,7 @@
 import { AbstractControl, FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
 import { filter, map, Observable, tap } from &#x27;rxjs&#x27;;
 import { environment } from &#x27;../../../../../environment/environment&#x27;;
+import { BookFallbackCoverPipe } from &#x27;../../../library&#x27;;
 import { CartBook, Client, combineDateTime, CommandHandler, CurrencyPipeApplier, DeliveryMethod, getDefaultOrder, getOrderCreateMinDate, getOrderDeliveryMethods, getPaymentMethods, getProductInfoPath, getProductsPath, mapCartBookToOrderBook, minDateValidator, notEmptyString, Order, PaymentMethod, phoneValidator, ValidationMessage } from &#x27;../../../shared&#x27;;
 import { CartService, CLIENT_ADD_ORDER_COMMAND_HANDLER, ClientAddOrderCommand, ClientService } from &#x27;../../../shop&#x27;;
 
@@ -1745,7 +1828,8 @@ export class MakeOrderComponent implements OnInit {
     private readonly clientService: ClientService,
     private readonly currencyApplier: CurrencyPipeApplier,
     private readonly cartService: CartService,
-    @Inject(CLIENT_ADD_ORDER_COMMAND_HANDLER) private readonly addOrderHandler: CommandHandler&lt;ClientAddOrderCommand&gt;
+    @Inject(CLIENT_ADD_ORDER_COMMAND_HANDLER) private readonly addOrderHandler: CommandHandler&lt;ClientAddOrderCommand&gt;,
+    private readonly fallbackImagePipe: BookFallbackCoverPipe,
   ) { }
 
   ngOnInit(): void {
@@ -1833,9 +1917,13 @@ export class MakeOrderComponent implements OnInit {
   getCartBookPrice(cartBook: CartBook): number {
     return cartBook.book.price * cartBook.bookAmount;
   }
-  onErrorImage(event: Event) {
-    const element &#x3D; event.target as HTMLImageElement;
-    element.src &#x3D; environment.bookCoverPlaceholder;
+
+  getCoverUrl(cartBook: CartBook): string {
+    return this.fallbackImagePipe.transform(cartBook.book.coverImgUrl, cartBook.book.id);
+  }
+
+  onErrorImage(cartBook: CartBook) {
+    this.fallbackImagePipe.markAsFailed(cartBook.book.id);
   }
 }
 </code></pre>
@@ -1911,7 +1999,7 @@ export class MakeOrderComponent implements OnInit {
                                     &lt;label for&#x3D;&quot;payment&quot;&gt;Payment&lt;/label&gt;
                                     &lt;div&gt;
                                         &lt;mat-radio-group id&#x3D;&quot;payment&quot; [formControl]&#x3D;&quot;paymentMethodInput&quot;&gt;
-                                            &lt;mat-radio-button *ngFor&#x3D;&quot;let item of paymentMethods&quot;
+                                            &lt;mat-radio-button *ngFor&#x3D;&quot;let item of paymentMethods&quot; [disabled]&#x3D;&quot;true&quot;
                                                 [value]&#x3D;&quot;item.value&quot;&gt;{{item.name}}&lt;/mat-radio-button&gt;
                                             &lt;mat-error
                                                 *ngIf&#x3D;&quot;validateInputField(paymentMethodInput).hasError&quot;&gt;{{validateInputField(paymentMethodInput).message}}&lt;/mat-error&gt;
@@ -1971,8 +2059,8 @@ export class MakeOrderComponent implements OnInit {
         &lt;div class&#x3D;&quot;w-full flex justify-between items-center&quot;&gt;
             &lt;div class&#x3D;&quot; flex flex gap-5&quot;&gt;
                 &lt;a class&#x3D;&quot;book__cover hover:cursor-pointer&quot; [routerLink]&#x3D;&quot;getBookPage(cartBook)&quot;&gt;
-                    &lt;img class&#x3D;&quot;h-42 w-24&quot; crossorigin&#x3D;&#x27;anonymous&#x27; [src]&#x3D;&quot;cartBook.book.coverImgUrl&quot; alt&#x3D;&quot;Book cover&quot;
-                        (error)&#x3D;&quot;onErrorImage($event)&quot; /&gt;
+                    &lt;img class&#x3D;&quot;h-36 w-24&quot; crossorigin&#x3D;&quot;anonymous&quot; [ngSrc]&#x3D;&quot;getCoverUrl(cartBook)&quot; alt&#x3D;&quot;Book cover&quot;
+                        (error)&#x3D;&quot;onErrorImage(cartBook)&quot; height&#x3D;&quot;144&quot; width&#x3D;&quot;96&quot; priority /&gt;
                 &lt;/a&gt;
                 &lt;a class&#x3D;&quot;h-full flex flex-col items-start pt-5&quot;&gt;
                     &lt;a class&#x3D;&quot;book__name text-gray-700 font-bold truncate hover:cursor-pointer hover:underline hover:text-red-500&quot;
@@ -2025,7 +2113,7 @@ export class MakeOrderComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="body__order bg-zinc-50">    <ng-container *ngIf="client$ | async as client; else loading">        <ng-container *ngIf="items$ | async as items; else loading">            <ng-container *ngIf="items.length > 0; else emptyCart">                <div class="order__content w-full">                    <cdk-virtual-scroll-viewport #scroller [itemSize]="itemHeight" class="content__books"                        [style.height.px]="calculateSelectionSize(items.length)">                        <ng-container *cdkVirtualFor="let item of items; trackBy: trackById">                            <div class="books__wrapper">                                <div *ngTemplateOutlet="book; context: { cartBook: item }"></div>                            </div>                        </ng-container>                    </cdk-virtual-scroll-viewport>                    <mat-accordion>                        <mat-expansion-panel (opened)="panelOpenState.set(true)" [expanded]="true"                            (closed)="panelOpenState.set(false)">                            <mat-expansion-panel-header>                                <mat-panel-title class="text-gray-700 font-bold"> Delivery Information                                </mat-panel-title>                            </mat-expansion-panel-header>                            <form id="order" class="flex flex-col space-y-1" [formGroup]="formGroup"                                (ngSubmit)="makeOrder(items)">                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">                                    <mat-form-field>                                        <mat-label>Delivery Date</mat-label>                                        <input matInput [matDatepicker]="picker" [formControl]="deliveryDateInput">                                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>                                        <mat-datepicker #picker></mat-datepicker>                                        <mat-error                                            *ngIf="validateInputField(deliveryDateInput).hasError">{{validateInputField(deliveryDateInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>Delivery Time</mat-label>                                        <input type="text" matInput [matTimepicker]="timepicker"                                            [formControl]="deliveryTimeInput" [min]="minOrderTime"                                            [max]="maxOrderTime" />                                        <mat-timepicker-toggle matSuffix [for]="timepicker"></mat-timepicker-toggle>                                        <mat-timepicker #timepicker mode="input" format="24h"> </mat-timepicker>                                        <mat-error                                            *ngIf="validateInputField(deliveryTimeInput).hasError">{{validateInputField(deliveryTimeInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>{{getDeliveryAddressFieldName()}}</mat-label>                                        <input matInput type="text" autocomplete="delivery-address"                                            [formControl]="deliveryAddressInput" placeholder="123 Main St"                                            maxlength="256">                                        <mat-error                                            *ngIf="validateInputField(deliveryAddressInput).hasError">{{validateInputField(deliveryAddressInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>Contact Name</mat-label>                                        <input matInput type="text" autocomplete="contact-name"                                            [formControl]="contactClientNameInput" placeholder="Jonh Doe"                                            maxlength="256">                                        <mat-error                                            *ngIf="validateInputField(contactClientNameInput).hasError">{{validateInputField(contactClientNameInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>Contact Phone</mat-label>                                        <input matInput type="text" autocomplete="contact-phone"                                            [formControl]="contactPhoneInput" placeholder="0123456789" maxlength="50">                                        <mat-error                                            *ngIf="validateInputField(contactPhoneInput).hasError">{{validateInputField(contactPhoneInput).message}}</mat-error>                                    </mat-form-field>                                </div>                                <div>                                    <label for="payment">Payment</label>                                    <div>                                        <mat-radio-group id="payment" [formControl]="paymentMethodInput">                                            <mat-radio-button *ngFor="let item of paymentMethods"                                                [value]="item.value">{{item.name}}</mat-radio-button>                                            <mat-error                                                *ngIf="validateInputField(paymentMethodInput).hasError">{{validateInputField(paymentMethodInput).message}}</mat-error>                                        </mat-radio-group>                                    </div>                                </div>                                <div>                                    <label for="delivery-method">Delivery Method</label>                                    <div>                                        <mat-radio-group id="delivery-method" [formControl]="deliveryMethodInput">                                            <mat-radio-button *ngFor="let item of deliveryMethods"                                                [value]="item.value">{{item.name}}</mat-radio-button>                                            <mat-error                                                *ngIf="validateInputField(deliveryMethodInput).hasError">{{validateInputField(deliveryMethodInput).message}}</mat-error>                                        </mat-radio-group>                                    </div>                                </div>                            </form>                        </mat-expansion-panel>                    </mat-accordion>                </div>                <div class="content__bottom-container flex-col">                    <div class="w-full flex justify-end">                        <div                            class="flex items-center mt-6 gap-5 p-6 bg-green-600/20 rounded-md border border-green-500">                            <span class="truncate text-2xl font-medium text-gray-800">                                {{ applyCurrencyPipe(getTotalPrice(items)) }}                            </span>                            <button mat-flat-button id="send-button" form="order" type="submit"                                class="!bg-green-600 !text-base">                                Confirm order                            </button>                        </div>                    </div>                </div>            </ng-container>        </ng-container>    </ng-container></div><!-- Empty Cart Template --><ng-template #emptyCart>    <div class="empty-cart flex items-center justify-center h-96">        <p class="text-lg text-gray-600">Your cart is empty. Add some items to continue.</p>    </div>    <div class="flex-col">        <div class="w-full flex justify-end">            <a mat-flat-button class="!bg-green-600 !text-base" [routerLink]="redirectToProductsPagePath">                Browse Products            </a>        </div>    </div></ng-template><!-- Book --><ng-template #book let-cartBook="cartBook">    <div class="book mr-2 h-72 w-11/12 border border-gray-200 rounded-lg p-6">        <div class="w-full flex justify-between items-center">            <div class=" flex flex gap-5">                <a class="book__cover hover:cursor-pointer" [routerLink]="getBookPage(cartBook)">                    <img class="h-42 w-24" crossorigin=\'anonymous\' [src]="cartBook.book.coverImgUrl" alt="Book cover"                        (error)="onErrorImage($event)" />                </a>                <a class="h-full flex flex-col items-start pt-5">                    <a class="book__name text-gray-700 font-bold truncate hover:cursor-pointer hover:underline hover:text-red-500"                        [routerLink]="getBookPage(cartBook)">                        {{ cartBook.book.name }}                    </a>                    <div class="book__author text-gray-400 truncate">                        {{ cartBook.book.author.name + \' \'+ cartBook.book.author.lastName }}                    </div>                </a>            </div>            <div class="text-gray-700 truncate text-lg">                {{ applyCurrencyPipe(cartBook.book.price) }} x {{cartBook.bookAmount}}            </div>            <div class="text-red-500 truncate font-bold text-lg">                {{ applyCurrencyPipe(getCartBookPrice(cartBook)) }}            </div>        </div>    </div></ng-template><!-- Loading --><ng-template #loading>    <app-loading></app-loading></ng-template></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="body__order bg-zinc-50">    <ng-container *ngIf="client$ | async as client; else loading">        <ng-container *ngIf="items$ | async as items; else loading">            <ng-container *ngIf="items.length > 0; else emptyCart">                <div class="order__content w-full">                    <cdk-virtual-scroll-viewport #scroller [itemSize]="itemHeight" class="content__books"                        [style.height.px]="calculateSelectionSize(items.length)">                        <ng-container *cdkVirtualFor="let item of items; trackBy: trackById">                            <div class="books__wrapper">                                <div *ngTemplateOutlet="book; context: { cartBook: item }"></div>                            </div>                        </ng-container>                    </cdk-virtual-scroll-viewport>                    <mat-accordion>                        <mat-expansion-panel (opened)="panelOpenState.set(true)" [expanded]="true"                            (closed)="panelOpenState.set(false)">                            <mat-expansion-panel-header>                                <mat-panel-title class="text-gray-700 font-bold"> Delivery Information                                </mat-panel-title>                            </mat-expansion-panel-header>                            <form id="order" class="flex flex-col space-y-1" [formGroup]="formGroup"                                (ngSubmit)="makeOrder(items)">                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">                                    <mat-form-field>                                        <mat-label>Delivery Date</mat-label>                                        <input matInput [matDatepicker]="picker" [formControl]="deliveryDateInput">                                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>                                        <mat-datepicker #picker></mat-datepicker>                                        <mat-error                                            *ngIf="validateInputField(deliveryDateInput).hasError">{{validateInputField(deliveryDateInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>Delivery Time</mat-label>                                        <input type="text" matInput [matTimepicker]="timepicker"                                            [formControl]="deliveryTimeInput" [min]="minOrderTime"                                            [max]="maxOrderTime" />                                        <mat-timepicker-toggle matSuffix [for]="timepicker"></mat-timepicker-toggle>                                        <mat-timepicker #timepicker mode="input" format="24h"> </mat-timepicker>                                        <mat-error                                            *ngIf="validateInputField(deliveryTimeInput).hasError">{{validateInputField(deliveryTimeInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>{{getDeliveryAddressFieldName()}}</mat-label>                                        <input matInput type="text" autocomplete="delivery-address"                                            [formControl]="deliveryAddressInput" placeholder="123 Main St"                                            maxlength="256">                                        <mat-error                                            *ngIf="validateInputField(deliveryAddressInput).hasError">{{validateInputField(deliveryAddressInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>Contact Name</mat-label>                                        <input matInput type="text" autocomplete="contact-name"                                            [formControl]="contactClientNameInput" placeholder="Jonh Doe"                                            maxlength="256">                                        <mat-error                                            *ngIf="validateInputField(contactClientNameInput).hasError">{{validateInputField(contactClientNameInput).message}}</mat-error>                                    </mat-form-field>                                    <mat-form-field>                                        <mat-label>Contact Phone</mat-label>                                        <input matInput type="text" autocomplete="contact-phone"                                            [formControl]="contactPhoneInput" placeholder="0123456789" maxlength="50">                                        <mat-error                                            *ngIf="validateInputField(contactPhoneInput).hasError">{{validateInputField(contactPhoneInput).message}}</mat-error>                                    </mat-form-field>                                </div>                                <div>                                    <label for="payment">Payment</label>                                    <div>                                        <mat-radio-group id="payment" [formControl]="paymentMethodInput">                                            <mat-radio-button *ngFor="let item of paymentMethods" [disabled]="true"                                                [value]="item.value">{{item.name}}</mat-radio-button>                                            <mat-error                                                *ngIf="validateInputField(paymentMethodInput).hasError">{{validateInputField(paymentMethodInput).message}}</mat-error>                                        </mat-radio-group>                                    </div>                                </div>                                <div>                                    <label for="delivery-method">Delivery Method</label>                                    <div>                                        <mat-radio-group id="delivery-method" [formControl]="deliveryMethodInput">                                            <mat-radio-button *ngFor="let item of deliveryMethods"                                                [value]="item.value">{{item.name}}</mat-radio-button>                                            <mat-error                                                *ngIf="validateInputField(deliveryMethodInput).hasError">{{validateInputField(deliveryMethodInput).message}}</mat-error>                                        </mat-radio-group>                                    </div>                                </div>                            </form>                        </mat-expansion-panel>                    </mat-accordion>                </div>                <div class="content__bottom-container flex-col">                    <div class="w-full flex justify-end">                        <div                            class="flex items-center mt-6 gap-5 p-6 bg-green-600/20 rounded-md border border-green-500">                            <span class="truncate text-2xl font-medium text-gray-800">                                {{ applyCurrencyPipe(getTotalPrice(items)) }}                            </span>                            <button mat-flat-button id="send-button" form="order" type="submit"                                class="!bg-green-600 !text-base">                                Confirm order                            </button>                        </div>                    </div>                </div>            </ng-container>        </ng-container>    </ng-container></div><!-- Empty Cart Template --><ng-template #emptyCart>    <div class="empty-cart flex items-center justify-center h-96">        <p class="text-lg text-gray-600">Your cart is empty. Add some items to continue.</p>    </div>    <div class="flex-col">        <div class="w-full flex justify-end">            <a mat-flat-button class="!bg-green-600 !text-base" [routerLink]="redirectToProductsPagePath">                Browse Products            </a>        </div>    </div></ng-template><!-- Book --><ng-template #book let-cartBook="cartBook">    <div class="book mr-2 h-72 w-11/12 border border-gray-200 rounded-lg p-6">        <div class="w-full flex justify-between items-center">            <div class=" flex flex gap-5">                <a class="book__cover hover:cursor-pointer" [routerLink]="getBookPage(cartBook)">                    <img class="h-36 w-24" crossorigin="anonymous" [ngSrc]="getCoverUrl(cartBook)" alt="Book cover"                        (error)="onErrorImage(cartBook)" height="144" width="96" priority />                </a>                <a class="h-full flex flex-col items-start pt-5">                    <a class="book__name text-gray-700 font-bold truncate hover:cursor-pointer hover:underline hover:text-red-500"                        [routerLink]="getBookPage(cartBook)">                        {{ cartBook.book.name }}                    </a>                    <div class="book__author text-gray-400 truncate">                        {{ cartBook.book.author.name + \' \'+ cartBook.book.author.lastName }}                    </div>                </a>            </div>            <div class="text-gray-700 truncate text-lg">                {{ applyCurrencyPipe(cartBook.book.price) }} x {{cartBook.bookAmount}}            </div>            <div class="text-red-500 truncate font-bold text-lg">                {{ applyCurrencyPipe(getCartBookPrice(cartBook)) }}            </div>        </div>    </div></ng-template><!-- Loading --><ng-template #loading>    <app-loading></app-loading></ng-template></div>'
     var COMPONENTS = [{'name': 'AdminClientDetailsComponent', 'selector': 'app-admin-client-details'},{'name': 'AdminRegisterUserDialogComponent', 'selector': 'app-admin-register-user-dialog'},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminUserDetailsComponent', 'selector': 'app-admin-user-details'},{'name': 'AdminUserFilterComponent', 'selector': 'app-admin-user-filter'},{'name': 'AdminUserPageComponent', 'selector': 'app-admin-user-page'},{'name': 'AdminUserTableComponent', 'selector': 'app-admin-user-table'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticatedComponent', 'selector': 'app-authenticated'},{'name': 'AuthorChangeDialogComponent', 'selector': 'app-author-change-dialog'},{'name': 'AuthorInputComponent', 'selector': 'app-author-input'},{'name': 'AuthorTableComponent', 'selector': 'app-author-table'},{'name': 'BaseSelectInputComponent', 'selector': ''},{'name': 'BookChangeDialogComponent', 'selector': 'app-book-change-dialog'},{'name': 'BookFilterComponent', 'selector': 'app-book-filter'},{'name': 'BookInputComponent', 'selector': 'app-book-input'},{'name': 'BookStatisticsFilterComponent', 'selector': 'app-book-statistics-filter'},{'name': 'BookStockDetailsComponent', 'selector': 'app-book-stock-details'},{'name': 'BookStockReplenishmentComponent', 'selector': 'app-book-stock-replenishment'},{'name': 'BookStockTableComponent', 'selector': 'app-book-stock'},{'name': 'BookTableComponent', 'selector': 'app-book-table'},{'name': 'CartDialogComponent', 'selector': 'app-cart-dialog'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'ClientChangeDialogComponent', 'selector': 'app-client-change-dialog'},{'name': 'ClientInfoComponent', 'selector': 'app-client-info'},{'name': 'ClientViewComponent', 'selector': 'app-client-view'},{'name': 'ConfirmMenuComponent', 'selector': 'app-confirm-menu'},{'name': 'CreateClientComponent', 'selector': 'app-create-client'},{'name': 'ErrorAnnotatedComponent', 'selector': 'app-error-annotated'},{'name': 'GenericTableComponent', 'selector': 'app-generic-table'},{'name': 'GenreChangeDialogComponent', 'selector': 'app-genre-change-dialog'},{'name': 'GenreInputComponent', 'selector': 'app-genre-input'},{'name': 'GenreTableComponent', 'selector': 'app-genre-table'},{'name': 'InfoAnnotatedComponent', 'selector': 'app-info-annotated'},{'name': 'LibraryFilterComponent', 'selector': 'app-library-filter'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginComponent', 'selector': 'app-auth-login'},{'name': 'MainViewComponent', 'selector': 'app-main-view'},{'name': 'MakeOrderComponent', 'selector': 'app-make-order'},{'name': 'ManagerTableComponent', 'selector': 'app-manager-table'},{'name': 'OAuthCallbackComponent', 'selector': 'app-oauth-callback'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrderHistoryComponent', 'selector': 'app-order-history'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'ProductInfoComponent', 'selector': 'app-product-info'},{'name': 'ProductPageComponent', 'selector': 'app-product-page'},{'name': 'PublisherChangeDialogComponent', 'selector': 'app-publisher-change-dialog'},{'name': 'PublisherInputComponent', 'selector': 'app-publisher-input'},{'name': 'PublisherTableComponent', 'selector': 'app-publisher-table'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ShoppingCartButtonComponent', 'selector': 'app-shopping-cart-button'},{'name': 'StatisticsChartComponent', 'selector': 'app-statistics-chart'},{'name': 'StatisticsPageComponent', 'selector': 'app-statistics-page'}];
     var DIRECTIVES = [{'name': 'InputMaxStockDirective', 'selector': '[appInputMaxStock]'},{'name': 'InputRangeDirective', 'selector': '[appInputRange]'}];
     var ACTUAL_COMPONENT = {'name': 'MakeOrderComponent'};

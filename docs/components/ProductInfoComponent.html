@@ -220,6 +220,9 @@
                                 <a href="#checkIfInStock" >checkIfInStock</a>
                             </li>
                             <li>
+                                <a href="#getCoverUrl" >getCoverUrl</a>
+                            </li>
+                            <li>
                                 <a href="#getStringCoverType" >getStringCoverType</a>
                             </li>
                             <li>
@@ -246,12 +249,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(bookService: <a href="../injectables/BookService.html" target="_self">BookService</a>, routeReader: <a href="../injectables/RouteReader.html" target="_self">RouteReader</a>, route: ActivatedRoute, currenctyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, addBookToCartHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;CartAddBookCommand&gt;</a>)</code>
+<code>constructor(bookService: <a href="../injectables/BookService.html" target="_self">BookService</a>, routeReader: <a href="../injectables/RouteReader.html" target="_self">RouteReader</a>, route: ActivatedRoute, currenctyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, addBookToCartHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;CartAddBookCommand&gt;</a>, fallbackImagePipe: <a href="../injectables/BookFallbackCoverPipe.html" target="_self">BookFallbackCoverPipe</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -321,6 +324,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/CommandHandler.html" target="_self" >CommandHandler&lt;CartAddBookCommand&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fallbackImagePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BookFallbackCoverPipe.html" target="_self" >BookFallbackCoverPipe</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -551,6 +566,73 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getCoverUrl"></a>
+                    <span class="name">
+                        <span ><b>getCoverUrl</b></span>
+                        <a href="#getCoverUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCoverUrl(book: <a href="../interfaces/Book.html" target="_self">Book</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="57"
+                                    class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>book</td>
+                                            <td>
+                                                            <code><a href="../interfaces/Book.html" target="_self" >Book</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="getStringCoverType"></a>
                     <span class="name">
                         <span ><b>getStringCoverType</b></span>
@@ -664,15 +746,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onErrorImage(event: Event)</code>
+<code>onErrorImage(book: <a href="../interfaces/Book.html" target="_self">Book</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="56"
-                                    class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:56</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="61"
+                                    class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -693,9 +775,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>event</td>
+                                                <td>book</td>
                                             <td>
-                                                        <code>Event</code>
+                                                            <code><a href="../interfaces/Book.html" target="_self" >Book</a></code>
                                             </td>
 
                                             <td>
@@ -743,7 +825,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -768,7 +850,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/client/components/product-info/product-info.component.ts:15</a></div>
                         </td>
                     </tr>
 
@@ -784,8 +866,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectionStrategy, Component, Inject, OnInit } from &#x27;@angular/core&#x27;;
 import { ActivatedRoute } from &#x27;@angular/router&#x27;;
 import { Observable } from &#x27;rxjs&#x27;;
-import { environment } from &#x27;../../../../../environment/environment&#x27;;
-import { BookService } from &#x27;../../../library&#x27;;
+import { BookFallbackCoverPipe, BookService } from &#x27;../../../library&#x27;;
 import { Book, CommandHandler, CoverType, CurrencyPipeApplier, getStringCoverType, RouteReader } from &#x27;../../../shared&#x27;;
 import { CART_ADD_BOOK_COMMAND_HANDLER, CartAddBookCommand } from &#x27;../../../shop&#x27;;
 
@@ -805,7 +886,8 @@ export class ProductInfoComponent implements OnInit {
     private readonly routeReader: RouteReader,
     private readonly route: ActivatedRoute,
     private readonly currenctyApplier: CurrencyPipeApplier,
-    @Inject(CART_ADD_BOOK_COMMAND_HANDLER) private readonly addBookToCartHandler: CommandHandler&lt;CartAddBookCommand&gt;
+    @Inject(CART_ADD_BOOK_COMMAND_HANDLER) private readonly addBookToCartHandler: CommandHandler&lt;CartAddBookCommand&gt;,
+    private readonly fallbackImagePipe: BookFallbackCoverPipe
   ) { }
 
   ngOnInit(): void {
@@ -836,9 +918,13 @@ export class ProductInfoComponent implements OnInit {
     this.addBookToCartHandler.dispatch(command);
     this.bookAdded &#x3D; true;
   }
-  onErrorImage(event: Event) {
-    const element &#x3D; event.target as HTMLImageElement;
-    element.src &#x3D; environment.bookCoverPlaceholder;
+
+  getCoverUrl(book: Book): string {
+    return this.fallbackImagePipe.transform(book.coverImgUrl, book.id);
+  }
+
+  onErrorImage(book: Book) {
+    this.fallbackImagePipe.markAsFailed(book.id);
   }
 }
 </code></pre>
@@ -856,8 +942,8 @@ export class ProductInfoComponent implements OnInit {
     &lt;div class&#x3D;&quot;book mr-2 h-full w-full border border-gray-200 rounded-lg p-10&quot;&gt;
         &lt;div class&#x3D;&quot;w-full flex flex-wrap gap-10&quot;&gt;
             &lt;div class&#x3D;&quot;book__cover&quot;&gt;
-                &lt;img class&#x3D;&quot;h-56 w-36&quot; crossorigin&#x3D;&#x27;anonymous&#x27; [src]&#x3D;&quot;book.coverImgUrl&quot; alt&#x3D;&quot;Book cover&quot;
-                    (error)&#x3D;&quot;onErrorImage($event)&quot; /&gt;
+                &lt;img class&#x3D;&quot;h-56 w-36&quot; crossorigin&#x3D;&#x27;anonymous&#x27; [ngSrc]&#x3D;&quot;getCoverUrl(book)&quot; alt&#x3D;&quot;Book cover&quot;
+                    (error)&#x3D;&quot;onErrorImage(book)&quot; height&#x3D;&quot;224&quot; width&#x3D;&quot;144&quot; priority /&gt;
             &lt;/div&gt;
             &lt;!-- Book Details --&gt;
             &lt;div class&#x3D;&quot;h-full w-5/12 pt-5 flex&quot;&gt;
@@ -987,7 +1073,7 @@ export class ProductInfoComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="bg-zinc-50 body__products">    <ng-container *ngIf="book$ | async as item">        <div *ngTemplateOutlet="book;  context: { book: item, bookAdded: bookAdded }">        </div>    </ng-container></div><ng-template #book let-book="book" let-bookAdded="bookAdded">    <div class="book mr-2 h-full w-full border border-gray-200 rounded-lg p-10">        <div class="w-full flex flex-wrap gap-10">            <div class="book__cover">                <img class="h-56 w-36" crossorigin=\'anonymous\' [src]="book.coverImgUrl" alt="Book cover"                    (error)="onErrorImage($event)" />            </div>            <!-- Book Details -->            <div class="h-full w-5/12 pt-5 flex">                <div class="grow">                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Title</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Author</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Genre</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Publisher</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Publication Date</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Page Amount</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Cover Type</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="product__price mt-3">                        @if (checkIfInStock(book)) {                        <span class="text-green-600 truncate text-md font-semibold">                            In stock                        </span>                        }                        @else {                        <span class="text-red-600 truncate text-md font-semibold">                            Out of stock                        </span>                        }                    </div>                </div>                <div class="pl-2">                    <div class="book__detail-value text-gray-400 flex justify-between">                        <span>{{ book.name | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400 flex justify-between">                        <span>{{ (book.author.name + \' \' + book.author.lastName) | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.genre.name | placeholder}}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.publisher.name | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.publicationDate | placeholder | date:\'dd/MM/YYYY\' }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.pageAmount | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ getStringCoverType(book.coverType) | placeholder }}</span>                    </div>                </div>            </div>        </div>        <div class="book__buy w-full flex items-center gap-4 justify-end">            <div class="text-red-500 truncate font-bold text-xl">                {{ applyCurrencyPipe(book.price) }}            </div>            <ng-container *ngIf="!bookAdded; else addedToCart">                <button mat-flat-button mat-dialog-close class="!bg-green-600 !text-base"                    [disabled]="!checkIfInStock(book)" (click)="addBookToCart(book)">                    <span class="material-icons">shopping_cart</span>                </button>            </ng-container>            <ng-template #addedToCart>                <div class="py-1 px-1 rounded inline-flex items-center">                    <span class="material-icons text-green-600">check</span>                </div>            </ng-template>        </div>        <div class="book__description text-gray-400">            <span class="font-semibold">                Description            </span>            <div class="description__text">                @if (book.description === null) {                Description is not provided, we will fix it soon... 😔                }                @else {                {{ book.description }}                }            </div>        </div>    </div></ng-template></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="bg-zinc-50 body__products">    <ng-container *ngIf="book$ | async as item">        <div *ngTemplateOutlet="book;  context: { book: item, bookAdded: bookAdded }">        </div>    </ng-container></div><ng-template #book let-book="book" let-bookAdded="bookAdded">    <div class="book mr-2 h-full w-full border border-gray-200 rounded-lg p-10">        <div class="w-full flex flex-wrap gap-10">            <div class="book__cover">                <img class="h-56 w-36" crossorigin=\'anonymous\' [ngSrc]="getCoverUrl(book)" alt="Book cover"                    (error)="onErrorImage(book)" height="224" width="144" priority />            </div>            <!-- Book Details -->            <div class="h-full w-5/12 pt-5 flex">                <div class="grow">                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Title</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Author</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Genre</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Publisher</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Publication Date</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Page Amount</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="book__detail-header text-gray-400">                        <span class="font-semibold">Cover Type</span>                        <span class="detail-header__dots">⠀</span>                    </div>                    <div class="product__price mt-3">                        @if (checkIfInStock(book)) {                        <span class="text-green-600 truncate text-md font-semibold">                            In stock                        </span>                        }                        @else {                        <span class="text-red-600 truncate text-md font-semibold">                            Out of stock                        </span>                        }                    </div>                </div>                <div class="pl-2">                    <div class="book__detail-value text-gray-400 flex justify-between">                        <span>{{ book.name | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400 flex justify-between">                        <span>{{ (book.author.name + \' \' + book.author.lastName) | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.genre.name | placeholder}}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.publisher.name | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.publicationDate | placeholder | date:\'dd/MM/YYYY\' }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ book.pageAmount | placeholder }}</span>                    </div>                    <div class="book__detail-value text-gray-400">                        <span>{{ getStringCoverType(book.coverType) | placeholder }}</span>                    </div>                </div>            </div>        </div>        <div class="book__buy w-full flex items-center gap-4 justify-end">            <div class="text-red-500 truncate font-bold text-xl">                {{ applyCurrencyPipe(book.price) }}            </div>            <ng-container *ngIf="!bookAdded; else addedToCart">                <button mat-flat-button mat-dialog-close class="!bg-green-600 !text-base"                    [disabled]="!checkIfInStock(book)" (click)="addBookToCart(book)">                    <span class="material-icons">shopping_cart</span>                </button>            </ng-container>            <ng-template #addedToCart>                <div class="py-1 px-1 rounded inline-flex items-center">                    <span class="material-icons text-green-600">check</span>                </div>            </ng-template>        </div>        <div class="book__description text-gray-400">            <span class="font-semibold">                Description            </span>            <div class="description__text">                @if (book.description === null) {                Description is not provided, we will fix it soon... 😔                }                @else {                {{ book.description }}                }            </div>        </div>    </div></ng-template></div>'
     var COMPONENTS = [{'name': 'AdminClientDetailsComponent', 'selector': 'app-admin-client-details'},{'name': 'AdminRegisterUserDialogComponent', 'selector': 'app-admin-register-user-dialog'},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminUserDetailsComponent', 'selector': 'app-admin-user-details'},{'name': 'AdminUserFilterComponent', 'selector': 'app-admin-user-filter'},{'name': 'AdminUserPageComponent', 'selector': 'app-admin-user-page'},{'name': 'AdminUserTableComponent', 'selector': 'app-admin-user-table'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticatedComponent', 'selector': 'app-authenticated'},{'name': 'AuthorChangeDialogComponent', 'selector': 'app-author-change-dialog'},{'name': 'AuthorInputComponent', 'selector': 'app-author-input'},{'name': 'AuthorTableComponent', 'selector': 'app-author-table'},{'name': 'BaseSelectInputComponent', 'selector': ''},{'name': 'BookChangeDialogComponent', 'selector': 'app-book-change-dialog'},{'name': 'BookFilterComponent', 'selector': 'app-book-filter'},{'name': 'BookInputComponent', 'selector': 'app-book-input'},{'name': 'BookStatisticsFilterComponent', 'selector': 'app-book-statistics-filter'},{'name': 'BookStockDetailsComponent', 'selector': 'app-book-stock-details'},{'name': 'BookStockReplenishmentComponent', 'selector': 'app-book-stock-replenishment'},{'name': 'BookStockTableComponent', 'selector': 'app-book-stock'},{'name': 'BookTableComponent', 'selector': 'app-book-table'},{'name': 'CartDialogComponent', 'selector': 'app-cart-dialog'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'ClientChangeDialogComponent', 'selector': 'app-client-change-dialog'},{'name': 'ClientInfoComponent', 'selector': 'app-client-info'},{'name': 'ClientViewComponent', 'selector': 'app-client-view'},{'name': 'ConfirmMenuComponent', 'selector': 'app-confirm-menu'},{'name': 'CreateClientComponent', 'selector': 'app-create-client'},{'name': 'ErrorAnnotatedComponent', 'selector': 'app-error-annotated'},{'name': 'GenericTableComponent', 'selector': 'app-generic-table'},{'name': 'GenreChangeDialogComponent', 'selector': 'app-genre-change-dialog'},{'name': 'GenreInputComponent', 'selector': 'app-genre-input'},{'name': 'GenreTableComponent', 'selector': 'app-genre-table'},{'name': 'InfoAnnotatedComponent', 'selector': 'app-info-annotated'},{'name': 'LibraryFilterComponent', 'selector': 'app-library-filter'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginComponent', 'selector': 'app-auth-login'},{'name': 'MainViewComponent', 'selector': 'app-main-view'},{'name': 'MakeOrderComponent', 'selector': 'app-make-order'},{'name': 'ManagerTableComponent', 'selector': 'app-manager-table'},{'name': 'OAuthCallbackComponent', 'selector': 'app-oauth-callback'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrderHistoryComponent', 'selector': 'app-order-history'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'ProductInfoComponent', 'selector': 'app-product-info'},{'name': 'ProductPageComponent', 'selector': 'app-product-page'},{'name': 'PublisherChangeDialogComponent', 'selector': 'app-publisher-change-dialog'},{'name': 'PublisherInputComponent', 'selector': 'app-publisher-input'},{'name': 'PublisherTableComponent', 'selector': 'app-publisher-table'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ShoppingCartButtonComponent', 'selector': 'app-shopping-cart-button'},{'name': 'StatisticsChartComponent', 'selector': 'app-statistics-chart'},{'name': 'StatisticsPageComponent', 'selector': 'app-statistics-page'}];
     var DIRECTIVES = [{'name': 'InputMaxStockDirective', 'selector': '[appInputMaxStock]'},{'name': 'InputRangeDirective', 'selector': '[appInputRange]'}];
     var ACTUAL_COMPONENT = {'name': 'ProductInfoComponent'};

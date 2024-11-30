@@ -250,6 +250,9 @@
                                 <a href="#getBookPage" >getBookPage</a>
                             </li>
                             <li>
+                                <a href="#getCoverUrl" >getCoverUrl</a>
+                            </li>
+                            <li>
                                 <a href="#getMaxAmount" >getMaxAmount</a>
                             </li>
                             <li>
@@ -268,7 +271,7 @@
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
-                                <a href="#onImageError" >onImageError</a>
+                                <a href="#onErrorImage" >onErrorImage</a>
                             </li>
                             <li>
                                 <a href="#onInputChange" >onInputChange</a>
@@ -308,12 +311,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(cartService: <a href="../injectables/CartService.html" target="_self">CartService</a>, currencyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, updateCartBookHanlder: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;UpdateCartBookCommand&gt;</a>, deleteCartBookHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;DeleteCartBookCommand&gt;</a>, startAddingOrderHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;ClientStartAddingOrderCommand&gt;</a>, dialogRef: <a href="../interfaces/Cart.html" target="_self">MatDialogRef&lt;CartDialogComponent&gt;</a>)</code>
+<code>constructor(cartService: <a href="../injectables/CartService.html" target="_self">CartService</a>, currencyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, updateCartBookHanlder: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;UpdateCartBookCommand&gt;</a>, deleteCartBookHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;DeleteCartBookCommand&gt;</a>, startAddingOrderHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;ClientStartAddingOrderCommand&gt;</a>, dialogRef: <a href="../interfaces/Cart.html" target="_self">MatDialogRef&lt;CartDialogComponent&gt;</a>, fallbackImagePipe: <a href="../injectables/BookFallbackCoverPipe.html" target="_self">BookFallbackCoverPipe</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -402,6 +405,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>fallbackImagePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BookFallbackCoverPipe.html" target="_self" >BookFallbackCoverPipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -440,8 +455,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="44"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:44</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="46"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:46</a></div>
                         </td>
                     </tr>
 
@@ -507,8 +522,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="48"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:48</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="50"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:50</a></div>
                         </td>
                     </tr>
 
@@ -544,8 +559,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="116"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:116</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="118"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:118</a></div>
                         </td>
                     </tr>
 
@@ -611,8 +626,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="98"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:98</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="100"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:100</a></div>
                         </td>
                     </tr>
 
@@ -678,8 +693,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="106"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:106</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="108"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:108</a></div>
                         </td>
                     </tr>
 
@@ -729,6 +744,73 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getCoverUrl"></a>
+                    <span class="name">
+                        <span ><b>getCoverUrl</b></span>
+                        <a href="#getCoverUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCoverUrl(cartBook: <a href="../interfaces/CartBook.html" target="_self">CartBook</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="122"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:122</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>cartBook</td>
+                                            <td>
+                                                            <code><a href="../interfaces/CartBook.html" target="_self" >CartBook</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="getMaxAmount"></a>
                     <span class="name">
                         <span ><b>getMaxAmount</b></span>
@@ -745,8 +827,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="53"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:53</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="55"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:55</a></div>
                         </td>
                     </tr>
 
@@ -812,8 +894,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="61"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:61</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="63"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:63</a></div>
                         </td>
                     </tr>
 
@@ -879,8 +961,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="65"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:65</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="67"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:67</a></div>
                         </td>
                     </tr>
 
@@ -946,8 +1028,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="109"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:109</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="111"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:111</a></div>
                         </td>
                     </tr>
 
@@ -983,8 +1065,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="37"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:37</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="39"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:39</a></div>
                         </td>
                     </tr>
 
@@ -1020,8 +1102,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="34"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:34</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="36"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:36</a></div>
                         </td>
                     </tr>
 
@@ -1041,24 +1123,24 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="onImageError"></a>
+                    <a name="onErrorImage"></a>
                     <span class="name">
-                        <span ><b>onImageError</b></span>
-                        <a href="#onImageError"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>onErrorImage</b></span>
+                        <a href="#onErrorImage"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onImageError(event: Event)</code>
+<code>onErrorImage(cartBook: <a href="../interfaces/CartBook.html" target="_self">CartBook</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="119"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:119</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="126"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:126</a></div>
                         </td>
                     </tr>
 
@@ -1079,9 +1161,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>event</td>
+                                                <td>cartBook</td>
                                             <td>
-                                                        <code>Event</code>
+                                                            <code><a href="../interfaces/CartBook.html" target="_self" >CartBook</a></code>
                                             </td>
 
                                             <td>
@@ -1124,8 +1206,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="74"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:74</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="76"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:76</a></div>
                         </td>
                     </tr>
 
@@ -1203,8 +1285,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="57"
-                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:57</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="59"
+                                    class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:59</a></div>
                         </td>
                     </tr>
 
@@ -1293,7 +1375,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -1320,7 +1402,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:21</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:22</a></div>
                         </td>
                     </tr>
 
@@ -1347,7 +1429,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:21</a></div>
                         </td>
                     </tr>
 
@@ -1379,7 +1461,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -1405,7 +1487,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -1437,7 +1519,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -1466,7 +1548,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/shop/components/cart/cart-dialog/cart-dialog.component.ts:24</a></div>
                                 </td>
                             </tr>
 
@@ -1482,6 +1564,7 @@ import { MatDialogRef } from &#x27;@angular/material/dialog&#x27;;
 import { debounceTime, distinctUntilChanged, Observable, Subject, takeUntil } from &#x27;rxjs&#x27;;
 import { CartService, CLIENT_START_ADDING_ORDER_COMMAND_HANDLER, ClientStartAddingOrderCommand, DELETE_CART_BOOK_COMMAND_HANDLER, DeleteCartBookCommand, UPDATE_CART_BOOK_COMMAND_HANDLER, UpdateCartBookCommand } from &#x27;../../..&#x27;;
 import { environment } from &#x27;../../../../../../environment/environment&#x27;;
+import { BookFallbackCoverPipe } from &#x27;../../../../library&#x27;;
 import { Book, CartBook, CommandHandler, CurrencyPipeApplier, getProductInfoPath, getProductsPath } from &#x27;../../../../shared&#x27;;
 
 @Component({
@@ -1508,6 +1591,7 @@ export class CartDialogComponent implements OnInit, OnDestroy {
     @Inject(DELETE_CART_BOOK_COMMAND_HANDLER) private readonly deleteCartBookHandler: CommandHandler&lt;DeleteCartBookCommand&gt;,
     @Inject(CLIENT_START_ADDING_ORDER_COMMAND_HANDLER) private readonly startAddingOrderHandler: CommandHandler&lt;ClientStartAddingOrderCommand&gt;,
     private readonly dialogRef: MatDialogRef&lt;CartDialogComponent&gt;,
+    private readonly fallbackImagePipe: BookFallbackCoverPipe,
   ) { }
 
   ngOnInit(): void {
@@ -1595,9 +1679,13 @@ export class CartDialogComponent implements OnInit, OnDestroy {
   checkIfInStock(book: Book): boolean {
     return book.stockAmount &gt; 0;
   }
-  onImageError(event: Event) {
-    const element &#x3D; event.target as HTMLImageElement;
-    element.src &#x3D; environment.bookCoverPlaceholder;
+
+  getCoverUrl(cartBook: CartBook): string {
+    return this.fallbackImagePipe.transform(cartBook.book.coverImgUrl, cartBook.book.id);
+  }
+
+  onErrorImage(cartBook: CartBook) {
+    this.fallbackImagePipe.markAsFailed(cartBook.book.id);
   }
 }
 </code></pre>
@@ -1659,8 +1747,8 @@ export class CartDialogComponent implements OnInit, OnDestroy {
             &lt;div class&#x3D;&quot;flex flex gap-5&quot;&gt;
                 &lt;a class&#x3D;&quot;book__cover hover:cursor-pointer relative&quot; mat-dialog-close
                     [routerLink]&#x3D;&quot;getBookPage(cartBook)&quot;&gt;
-                    &lt;img class&#x3D;&quot;h-42 w-24&quot; [src]&#x3D;&quot;cartBook.book.coverImgUrl&quot; alt&#x3D;&quot;Book cover&quot;
-                        (error)&#x3D;&quot;onImageError($event)&quot; crossorigin&#x3D;&quot;anonymous&quot; /&gt;
+                    &lt;img class&#x3D;&quot;h-36 w-24&quot; crossorigin&#x3D;&quot;anonymous&quot; [ngSrc]&#x3D;&quot;getCoverUrl(cartBook)&quot; alt&#x3D;&quot;Book cover&quot;
+                        (error)&#x3D;&quot;onErrorImage(cartBook)&quot; height&#x3D;&quot;144&quot; width&#x3D;&quot;96&quot; priority /&gt;
 
                     &lt;!-- Gray Overlay if Out of Stock --&gt;
                     &lt;div *ngIf&#x3D;&quot;!checkIfInStock(cartBook.book)&quot;
@@ -1822,7 +1910,7 @@ export class CartDialogComponent implements OnInit, OnDestroy {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><button mat-icon-button mat-dialog-close class="close-button">    <span class="material-icons">close</span></button><h2 mat-dialog-title>Cart</h2><ng-container *ngIf="items$ | async as items; else loading">    <ng-container *ngIf="items.length > 0; else emptyCart">        <mat-dialog-content class="content">            <cdk-virtual-scroll-viewport #scroller [itemSize]="itemHeight" class="products"                [style.height.px]="calculateSelectionSize()">                <ng-container *cdkVirtualFor="let item of items; trackBy: trackById">                    <div class="book-wrapper">                        <div *ngTemplateOutlet="book; context: { cartBook: item }"></div>                    </div>                </ng-container>            </cdk-virtual-scroll-viewport>        </mat-dialog-content>        <mat-dialog-actions class="actions__bottom-container flex-col">            <div class="w-full flex justify-end">                <div class="flex items-center mt-6 gap-5 p-6 bg-green-600/20 rounded-md border border-green-500">                    <span class="truncate text-2xl font-medium text-gray-800">                        {{ applyCurrencyPipe(getTotalPrice(items)) }}                    </span>                    <button mat-flat-button id="send-button" form="authorDetails" type="submit" (click)="makeOrder()"                        class="!bg-green-600 !text-base">                        Make order                    </button>                </div>            </div>        </mat-dialog-actions>    </ng-container></ng-container><!-- Empty Cart Template --><ng-template #emptyCart>    <mat-dialog-content>        <div class="empty-cart flex items-center justify-center h-96">            <p class="text-lg text-gray-600">Your cart is empty. Add some items to continue.</p>        </div>    </mat-dialog-content>    <mat-dialog-actions class="actions__bottom-container flex-col">        <div class="w-full flex justify-end">            <a mat-flat-button mat-dialog-close class="!bg-green-600 !text-base" [routerLink]="booksUrlPath">                Browse Products            </a>        </div>    </mat-dialog-actions></ng-template><ng-template #book let-cartBook="cartBook">    <div class="book mr-2 h-72 w-11/12 border border-gray-200 rounded-lg p-6 relative">        <!-- Book Cover with "Out of Stock" Overlay -->        <div class="w-full flex justify-between">            <div class="flex flex gap-5">                <a class="book__cover hover:cursor-pointer relative" mat-dialog-close                    [routerLink]="getBookPage(cartBook)">                    <img class="h-42 w-24" [src]="cartBook.book.coverImgUrl" alt="Book cover"                        (error)="onImageError($event)" crossorigin="anonymous" />                    <!-- Gray Overlay if Out of Stock -->                    <div *ngIf="!checkIfInStock(cartBook.book)"                        class="absolute inset-0 bg-gray-100/70 flex items-center justify-center text-red-600 font-bold text-xs">                        Out of Stock                    </div>                </a>                <a class="h-full flex flex-col items-start pt-5">                    <a class="book__name text-gray-700 font-bold truncate hover:cursor-pointer hover:underline hover:text-red-500"                        mat-dialog-close [routerLink]="getBookPage(cartBook)">                        {{ cartBook.book.name }}                    </a>                    <div class="book__author text-gray-400 truncate">                        {{ cartBook.book.author.name + \' \' + cartBook.book.author.lastName }}                    </div>                </a>            </div>            <div>                <button mat-icon-button [matMenuTriggerFor]="serverSlotMoreOptions">                    <span class="material-icons">more_vert</span>                </button>                <mat-menu #serverSlotMoreOptions="matMenu" id="serverSlotMoreOptions">                    <button mat-menu-item (click)="deleteCartBook(cartBook)">                        <div class="flex gap-2 items-center justify-between">                            <span class="text-base text-red-600">Delete</span>                            <span class="material-icons text-red-600">delete</span>                        </div>                    </button>                </mat-menu>            </div>        </div>        <!-- Book Price and Amount Input -->        <div class="book__amount w-full justify-end gap-4">            <div class="truncate font-bold text-lg"                [ngClass]="checkIfInStock(cartBook.book) ? \'text-red-500\' : \'text-gray-300\'">                {{ applyCurrencyPipe(getPrice(cartBook)) }}            </div>            <!-- Disable input if book is out of stock -->            <input type="number" appInputRange [min]="1" [max]="getMaxAmount(cartBook.book)"                [value]="cartBook.bookAmount" (input)="onInputChange(cartBook, $event)"                [disabled]="!checkIfInStock(cartBook.book)"                [ngClass]="checkIfInStock(cartBook.book) ? \'text-gray-900\' : \'text-gray-300\'"                class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />        </div>    </div></ng-template><!-- Loading --><ng-template #loading>    <app-loading></app-loading></ng-template></div>'
+        var COMPONENT_TEMPLATE = '<div><button mat-icon-button mat-dialog-close class="close-button">    <span class="material-icons">close</span></button><h2 mat-dialog-title>Cart</h2><ng-container *ngIf="items$ | async as items; else loading">    <ng-container *ngIf="items.length > 0; else emptyCart">        <mat-dialog-content class="content">            <cdk-virtual-scroll-viewport #scroller [itemSize]="itemHeight" class="products"                [style.height.px]="calculateSelectionSize()">                <ng-container *cdkVirtualFor="let item of items; trackBy: trackById">                    <div class="book-wrapper">                        <div *ngTemplateOutlet="book; context: { cartBook: item }"></div>                    </div>                </ng-container>            </cdk-virtual-scroll-viewport>        </mat-dialog-content>        <mat-dialog-actions class="actions__bottom-container flex-col">            <div class="w-full flex justify-end">                <div class="flex items-center mt-6 gap-5 p-6 bg-green-600/20 rounded-md border border-green-500">                    <span class="truncate text-2xl font-medium text-gray-800">                        {{ applyCurrencyPipe(getTotalPrice(items)) }}                    </span>                    <button mat-flat-button id="send-button" form="authorDetails" type="submit" (click)="makeOrder()"                        class="!bg-green-600 !text-base">                        Make order                    </button>                </div>            </div>        </mat-dialog-actions>    </ng-container></ng-container><!-- Empty Cart Template --><ng-template #emptyCart>    <mat-dialog-content>        <div class="empty-cart flex items-center justify-center h-96">            <p class="text-lg text-gray-600">Your cart is empty. Add some items to continue.</p>        </div>    </mat-dialog-content>    <mat-dialog-actions class="actions__bottom-container flex-col">        <div class="w-full flex justify-end">            <a mat-flat-button mat-dialog-close class="!bg-green-600 !text-base" [routerLink]="booksUrlPath">                Browse Products            </a>        </div>    </mat-dialog-actions></ng-template><ng-template #book let-cartBook="cartBook">    <div class="book mr-2 h-72 w-11/12 border border-gray-200 rounded-lg p-6 relative">        <!-- Book Cover with "Out of Stock" Overlay -->        <div class="w-full flex justify-between">            <div class="flex flex gap-5">                <a class="book__cover hover:cursor-pointer relative" mat-dialog-close                    [routerLink]="getBookPage(cartBook)">                    <img class="h-36 w-24" crossorigin="anonymous" [ngSrc]="getCoverUrl(cartBook)" alt="Book cover"                        (error)="onErrorImage(cartBook)" height="144" width="96" priority />                    <!-- Gray Overlay if Out of Stock -->                    <div *ngIf="!checkIfInStock(cartBook.book)"                        class="absolute inset-0 bg-gray-100/70 flex items-center justify-center text-red-600 font-bold text-xs">                        Out of Stock                    </div>                </a>                <a class="h-full flex flex-col items-start pt-5">                    <a class="book__name text-gray-700 font-bold truncate hover:cursor-pointer hover:underline hover:text-red-500"                        mat-dialog-close [routerLink]="getBookPage(cartBook)">                        {{ cartBook.book.name }}                    </a>                    <div class="book__author text-gray-400 truncate">                        {{ cartBook.book.author.name + \' \' + cartBook.book.author.lastName }}                    </div>                </a>            </div>            <div>                <button mat-icon-button [matMenuTriggerFor]="serverSlotMoreOptions">                    <span class="material-icons">more_vert</span>                </button>                <mat-menu #serverSlotMoreOptions="matMenu" id="serverSlotMoreOptions">                    <button mat-menu-item (click)="deleteCartBook(cartBook)">                        <div class="flex gap-2 items-center justify-between">                            <span class="text-base text-red-600">Delete</span>                            <span class="material-icons text-red-600">delete</span>                        </div>                    </button>                </mat-menu>            </div>        </div>        <!-- Book Price and Amount Input -->        <div class="book__amount w-full justify-end gap-4">            <div class="truncate font-bold text-lg"                [ngClass]="checkIfInStock(cartBook.book) ? \'text-red-500\' : \'text-gray-300\'">                {{ applyCurrencyPipe(getPrice(cartBook)) }}            </div>            <!-- Disable input if book is out of stock -->            <input type="number" appInputRange [min]="1" [max]="getMaxAmount(cartBook.book)"                [value]="cartBook.bookAmount" (input)="onInputChange(cartBook, $event)"                [disabled]="!checkIfInStock(cartBook.book)"                [ngClass]="checkIfInStock(cartBook.book) ? \'text-gray-900\' : \'text-gray-300\'"                class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />        </div>    </div></ng-template><!-- Loading --><ng-template #loading>    <app-loading></app-loading></ng-template></div>'
     var COMPONENTS = [{'name': 'AdminClientDetailsComponent', 'selector': 'app-admin-client-details'},{'name': 'AdminRegisterUserDialogComponent', 'selector': 'app-admin-register-user-dialog'},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminUserDetailsComponent', 'selector': 'app-admin-user-details'},{'name': 'AdminUserFilterComponent', 'selector': 'app-admin-user-filter'},{'name': 'AdminUserPageComponent', 'selector': 'app-admin-user-page'},{'name': 'AdminUserTableComponent', 'selector': 'app-admin-user-table'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticatedComponent', 'selector': 'app-authenticated'},{'name': 'AuthorChangeDialogComponent', 'selector': 'app-author-change-dialog'},{'name': 'AuthorInputComponent', 'selector': 'app-author-input'},{'name': 'AuthorTableComponent', 'selector': 'app-author-table'},{'name': 'BaseSelectInputComponent', 'selector': ''},{'name': 'BookChangeDialogComponent', 'selector': 'app-book-change-dialog'},{'name': 'BookFilterComponent', 'selector': 'app-book-filter'},{'name': 'BookInputComponent', 'selector': 'app-book-input'},{'name': 'BookStatisticsFilterComponent', 'selector': 'app-book-statistics-filter'},{'name': 'BookStockDetailsComponent', 'selector': 'app-book-stock-details'},{'name': 'BookStockReplenishmentComponent', 'selector': 'app-book-stock-replenishment'},{'name': 'BookStockTableComponent', 'selector': 'app-book-stock'},{'name': 'BookTableComponent', 'selector': 'app-book-table'},{'name': 'CartDialogComponent', 'selector': 'app-cart-dialog'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'ClientChangeDialogComponent', 'selector': 'app-client-change-dialog'},{'name': 'ClientInfoComponent', 'selector': 'app-client-info'},{'name': 'ClientViewComponent', 'selector': 'app-client-view'},{'name': 'ConfirmMenuComponent', 'selector': 'app-confirm-menu'},{'name': 'CreateClientComponent', 'selector': 'app-create-client'},{'name': 'ErrorAnnotatedComponent', 'selector': 'app-error-annotated'},{'name': 'GenericTableComponent', 'selector': 'app-generic-table'},{'name': 'GenreChangeDialogComponent', 'selector': 'app-genre-change-dialog'},{'name': 'GenreInputComponent', 'selector': 'app-genre-input'},{'name': 'GenreTableComponent', 'selector': 'app-genre-table'},{'name': 'InfoAnnotatedComponent', 'selector': 'app-info-annotated'},{'name': 'LibraryFilterComponent', 'selector': 'app-library-filter'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginComponent', 'selector': 'app-auth-login'},{'name': 'MainViewComponent', 'selector': 'app-main-view'},{'name': 'MakeOrderComponent', 'selector': 'app-make-order'},{'name': 'ManagerTableComponent', 'selector': 'app-manager-table'},{'name': 'OAuthCallbackComponent', 'selector': 'app-oauth-callback'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrderHistoryComponent', 'selector': 'app-order-history'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'ProductInfoComponent', 'selector': 'app-product-info'},{'name': 'ProductPageComponent', 'selector': 'app-product-page'},{'name': 'PublisherChangeDialogComponent', 'selector': 'app-publisher-change-dialog'},{'name': 'PublisherInputComponent', 'selector': 'app-publisher-input'},{'name': 'PublisherTableComponent', 'selector': 'app-publisher-table'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ShoppingCartButtonComponent', 'selector': 'app-shopping-cart-button'},{'name': 'StatisticsChartComponent', 'selector': 'app-statistics-chart'},{'name': 'StatisticsPageComponent', 'selector': 'app-statistics-page'}];
     var DIRECTIVES = [{'name': 'InputMaxStockDirective', 'selector': '[appInputMaxStock]'},{'name': 'InputRangeDirective', 'selector': '[appInputRange]'}];
     var ACTUAL_COMPONENT = {'name': 'CartDialogComponent'};

@@ -256,6 +256,9 @@
                                 <a href="#getBookPage" >getBookPage</a>
                             </li>
                             <li>
+                                <a href="#getCoverUrl" >getCoverUrl</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
@@ -289,12 +292,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(bookService: <a href="../injectables/BookService.html" target="_self">BookService</a>, currenctyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, addBookToCartHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;CartAddBookCommand&gt;</a>)</code>
+<code>constructor(bookService: <a href="../injectables/BookService.html" target="_self">BookService</a>, currenctyApplier: <a href="../injectables/CurrencyPipeApplier.html" target="_self">CurrencyPipeApplier</a>, addBookToCartHandler: <a href="../injectables/CommandHandler.html" target="_self">CommandHandler&lt;CartAddBookCommand&gt;</a>, fallbackImagePipe: <a href="../injectables/BookFallbackCoverPipe.html" target="_self">BookFallbackCoverPipe</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:25</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -340,6 +343,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/CommandHandler.html" target="_self" >CommandHandler&lt;CartAddBookCommand&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fallbackImagePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BookFallbackCoverPipe.html" target="_self" >BookFallbackCoverPipe</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -519,8 +534,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="100"
-                                    class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:100</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="101"
+                                    class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:101</a></div>
                         </td>
                     </tr>
 
@@ -812,6 +827,73 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="getCoverUrl"></a>
+                    <span class="name">
+                        <span ><b>getCoverUrl</b></span>
+                        <a href="#getCoverUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCoverUrl(book: <a href="../interfaces/Book.html" target="_self">Book</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="105"
+                                    class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:105</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>book</td>
+                                            <td>
+                                                            <code><a href="../interfaces/Book.html" target="_self" >Book</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="ngOnInit"></a>
                     <span class="name">
                         <span ><b>ngOnInit</b></span>
@@ -858,15 +940,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onErrorImage(event: Event)</code>
+<code>onErrorImage(book: <a href="../interfaces/Book.html" target="_self">Book</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="103"
-                                    class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:103</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="109"
+                                    class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:109</a></div>
                         </td>
                     </tr>
 
@@ -887,9 +969,9 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                                <td>event</td>
+                                                <td>book</td>
                                             <td>
-                                                        <code>Event</code>
+                                                            <code><a href="../interfaces/Book.html" target="_self" >Book</a></code>
                                             </td>
 
                                             <td>
@@ -1115,7 +1197,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:21</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -1148,7 +1230,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:24</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -1180,7 +1262,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:25</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:24</a></div>
                         </td>
                     </tr>
 
@@ -1206,7 +1288,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -1237,7 +1319,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:22</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:21</a></div>
                         </td>
                     </tr>
 
@@ -1268,7 +1350,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:22</a></div>
                         </td>
                     </tr>
 
@@ -1304,7 +1386,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:15</a></div>
                         </td>
                     </tr>
 
@@ -1330,7 +1412,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/client/components/product-page/product-page.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -1346,8 +1428,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectionStrategy, Component, Inject, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
 import { MatPaginator, PageEvent } from &#x27;@angular/material/paginator&#x27;;
 import { map, Observable, tap } from &#x27;rxjs&#x27;;
-import { environment } from &#x27;../../../../../environment/environment&#x27;;
-import { BookService } from &#x27;../../../library&#x27;;
+import { BookFallbackCoverPipe, BookService } from &#x27;../../../library&#x27;;
 import { Book, BookFilterRequest, CommandHandler, CurrencyPipeApplier, defaultBookFilterRequest } from &#x27;../../../shared&#x27;;
 import { CART_ADD_BOOK_COMMAND_HANDLER, CartAddBookCommand } from &#x27;../../../shop&#x27;;
 
@@ -1372,7 +1453,8 @@ export class ProductPageComponent implements OnInit {
   constructor(
     private readonly bookService: BookService,
     private readonly currenctyApplier: CurrencyPipeApplier,
-    @Inject(CART_ADD_BOOK_COMMAND_HANDLER) private readonly addBookToCartHandler: CommandHandler&lt;CartAddBookCommand&gt;
+    @Inject(CART_ADD_BOOK_COMMAND_HANDLER) private readonly addBookToCartHandler: CommandHandler&lt;CartAddBookCommand&gt;,
+    private readonly fallbackImagePipe: BookFallbackCoverPipe,
   ) { }
 
   ngOnInit(): void {
@@ -1442,12 +1524,17 @@ export class ProductPageComponent implements OnInit {
   getBookPage(book: Book): string {
     return book.id.toString();
   }
+
   checkIfInStock(book: Book): boolean {
     return book.stockAmount &gt; 0;
   }
-  onErrorImage(event: Event) {
-    const element &#x3D; event.target as HTMLImageElement;
-    element.src &#x3D; environment.bookCoverPlaceholder;
+
+  getCoverUrl(book: Book): string {
+    return this.fallbackImagePipe.transform(book.coverImgUrl, book.id);
+  }
+
+  onErrorImage(book: Book) {
+    this.fallbackImagePipe.markAsFailed(book.id);
   }
 }
 </code></pre>
@@ -1455,6 +1542,7 @@ export class ProductPageComponent implements OnInit {
 
     <div class="tab-pane fade " id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;app-book-filter (filterChange)&#x3D;&quot;filterChange($event)&quot;&gt;&lt;/app-book-filter&gt;
+
 &lt;div class&#x3D;&quot;bg-zinc-50 body__products&quot;&gt;
     &lt;ng-container *ngIf&#x3D;&quot;items$ | async as items; else loading&quot;&gt;
         &lt;ng-container *ngIf&#x3D;&quot;items.length &gt; 0; else noItems&quot;&gt;
@@ -1484,8 +1572,8 @@ export class ProductPageComponent implements OnInit {
         &lt;a [routerLink]&#x3D;&quot;getBookPage(book)&quot;
             class&#x3D;&quot;flex flex-col items-center hover:cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 relative&quot;&gt;
             &lt;div class&#x3D;&quot;book__cover relative&quot;&gt;
-                &lt;img class&#x3D;&quot;h-42 w-24&quot; crossorigin&#x3D;&#x27;anonymous&#x27; [src]&#x3D;&quot;book.coverImgUrl&quot; alt&#x3D;&quot;Book cover&quot;
-                    (error)&#x3D;&quot;onErrorImage($event)&quot; /&gt;
+                &lt;img class&#x3D;&quot;h-36 w-24&quot; crossorigin&#x3D;&quot;anonymous&quot; [ngSrc]&#x3D;&quot;getCoverUrl(book)&quot; alt&#x3D;&quot;Book cover&quot;
+                    (error)&#x3D;&quot;onErrorImage(book)&quot; height&#x3D;&quot;144&quot; width&#x3D;&quot;96&quot; priority /&gt;
                 &lt;!-- Gray Overlay with Centered &quot;Out of Stock&quot; Text --&gt;
                 &lt;div *ngIf&#x3D;&quot;!checkIfInStock(book)&quot;
                     class&#x3D;&quot;absolute inset-0 bg-gray-100/70 flex items-center justify-center text-red-600 font-bold text-xs&quot;&gt;
@@ -1557,7 +1645,7 @@ export class ProductPageComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-book-filter (filterChange)="filterChange($event)"></app-book-filter><div class="bg-zinc-50 body__products">    <ng-container *ngIf="items$ | async as items; else loading">        <ng-container *ngIf="items.length > 0; else noItems">            <ng-container *ngIf="totalAmount$ | async as totalAmount">                <div class="products-grid">                    <ng-container *ngFor="let item of items">                        <div *ngTemplateOutlet="book; context: { book: item, bookAdded: bookAddedMap[item.id] }">                        </div>                    </ng-container>                </div>                <mat-paginator class="!bg-zinc-50" [length]="totalAmount" [pageSize]="pageSize"                    [pageSizeOptions]="pageSizeOptions" (page)="onPageChange($event)">                </mat-paginator>            </ng-container>        </ng-container>    </ng-container></div><!-- Display this when no items are found --><ng-template #noItems>    <div class="no-items-container flex items-center justify-center h-96">        <p class="text-lg text-gray-600">No items found. Please adjust your filters.</p>    </div></ng-template><ng-template #book let-book="book" let-bookAdded="bookAdded">    <div class="book h-72 w-48 flex flex-col items-center border border-gray-200 rounded-lg p-4">        <a [routerLink]="getBookPage(book)"            class="flex flex-col items-center hover:cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 relative">            <div class="book__cover relative">                <img class="h-42 w-24" crossorigin=\'anonymous\' [src]="book.coverImgUrl" alt="Book cover"                    (error)="onErrorImage($event)" />                <!-- Gray Overlay with Centered "Out of Stock" Text -->                <div *ngIf="!checkIfInStock(book)"                    class="absolute inset-0 bg-gray-100/70 flex items-center justify-center text-red-600 font-bold text-xs">                    Out of Stock                </div>            </div>            <div class="duration-50">                <div class="book__name font-bold truncate-big"                    [ngClass]="checkIfInStock(book) ? \'text-gray-700\' : \'text-gray-300\'">                    {{ book.name }}                </div>                <div class="book__author truncate-small"                    [ngClass]="checkIfInStock(book) ? \'text-gray-400\' : \'text-gray-300\'">                    {{ book.author.name + \' \' + book.author.lastName }}                </div>            </div>        </a>        <div class="book__buy w-full flex items-center justify-between">            <div class="truncate-small font-bold" [ngClass]="book.stockAmount > 0 ? \'text-red-500\' : \'text-gray-300\'">                {{ applyCurrencyPipe(book.price) }}            </div>            <ng-container *ngIf="!bookAdded; else addedToCart">                <button class="py-1 px-1 rounded inline-flex items-center" (click)="addBookToCart(book)"                    [disabled]="!checkIfInStock(book)" [ngClass]="{                            \'hover:bg-gray-200 text-green-600\': checkIfInStock(book),                            \'bg-gray-300 text-gray-400\': !checkIfInStock(book)                        }">                    <span class="material-icons">shopping_cart</span>                </button>            </ng-container>            <ng-template #addedToCart>                <div class="py-1 px-1 rounded inline-flex items-center">                    <span class="material-icons text-green-600">check</span>                </div>            </ng-template>        </div>    </div></ng-template><!-- Loading --><ng-template #loading>    <app-loading></app-loading></ng-template></div>'
+        var COMPONENT_TEMPLATE = '<div><app-book-filter (filterChange)="filterChange($event)"></app-book-filter><div class="bg-zinc-50 body__products">    <ng-container *ngIf="items$ | async as items; else loading">        <ng-container *ngIf="items.length > 0; else noItems">            <ng-container *ngIf="totalAmount$ | async as totalAmount">                <div class="products-grid">                    <ng-container *ngFor="let item of items">                        <div *ngTemplateOutlet="book; context: { book: item, bookAdded: bookAddedMap[item.id] }">                        </div>                    </ng-container>                </div>                <mat-paginator class="!bg-zinc-50" [length]="totalAmount" [pageSize]="pageSize"                    [pageSizeOptions]="pageSizeOptions" (page)="onPageChange($event)">                </mat-paginator>            </ng-container>        </ng-container>    </ng-container></div><!-- Display this when no items are found --><ng-template #noItems>    <div class="no-items-container flex items-center justify-center h-96">        <p class="text-lg text-gray-600">No items found. Please adjust your filters.</p>    </div></ng-template><ng-template #book let-book="book" let-bookAdded="bookAdded">    <div class="book h-72 w-48 flex flex-col items-center border border-gray-200 rounded-lg p-4">        <a [routerLink]="getBookPage(book)"            class="flex flex-col items-center hover:cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-105 relative">            <div class="book__cover relative">                <img class="h-36 w-24" crossorigin="anonymous" [ngSrc]="getCoverUrl(book)" alt="Book cover"                    (error)="onErrorImage(book)" height="144" width="96" priority />                <!-- Gray Overlay with Centered "Out of Stock" Text -->                <div *ngIf="!checkIfInStock(book)"                    class="absolute inset-0 bg-gray-100/70 flex items-center justify-center text-red-600 font-bold text-xs">                    Out of Stock                </div>            </div>            <div class="duration-50">                <div class="book__name font-bold truncate-big"                    [ngClass]="checkIfInStock(book) ? \'text-gray-700\' : \'text-gray-300\'">                    {{ book.name }}                </div>                <div class="book__author truncate-small"                    [ngClass]="checkIfInStock(book) ? \'text-gray-400\' : \'text-gray-300\'">                    {{ book.author.name + \' \' + book.author.lastName }}                </div>            </div>        </a>        <div class="book__buy w-full flex items-center justify-between">            <div class="truncate-small font-bold" [ngClass]="book.stockAmount > 0 ? \'text-red-500\' : \'text-gray-300\'">                {{ applyCurrencyPipe(book.price) }}            </div>            <ng-container *ngIf="!bookAdded; else addedToCart">                <button class="py-1 px-1 rounded inline-flex items-center" (click)="addBookToCart(book)"                    [disabled]="!checkIfInStock(book)" [ngClass]="{                            \'hover:bg-gray-200 text-green-600\': checkIfInStock(book),                            \'bg-gray-300 text-gray-400\': !checkIfInStock(book)                        }">                    <span class="material-icons">shopping_cart</span>                </button>            </ng-container>            <ng-template #addedToCart>                <div class="py-1 px-1 rounded inline-flex items-center">                    <span class="material-icons text-green-600">check</span>                </div>            </ng-template>        </div>    </div></ng-template><!-- Loading --><ng-template #loading>    <app-loading></app-loading></ng-template></div>'
     var COMPONENTS = [{'name': 'AdminClientDetailsComponent', 'selector': 'app-admin-client-details'},{'name': 'AdminRegisterUserDialogComponent', 'selector': 'app-admin-register-user-dialog'},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminUserDetailsComponent', 'selector': 'app-admin-user-details'},{'name': 'AdminUserFilterComponent', 'selector': 'app-admin-user-filter'},{'name': 'AdminUserPageComponent', 'selector': 'app-admin-user-page'},{'name': 'AdminUserTableComponent', 'selector': 'app-admin-user-table'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticatedComponent', 'selector': 'app-authenticated'},{'name': 'AuthorChangeDialogComponent', 'selector': 'app-author-change-dialog'},{'name': 'AuthorInputComponent', 'selector': 'app-author-input'},{'name': 'AuthorTableComponent', 'selector': 'app-author-table'},{'name': 'BaseSelectInputComponent', 'selector': ''},{'name': 'BookChangeDialogComponent', 'selector': 'app-book-change-dialog'},{'name': 'BookFilterComponent', 'selector': 'app-book-filter'},{'name': 'BookInputComponent', 'selector': 'app-book-input'},{'name': 'BookStatisticsFilterComponent', 'selector': 'app-book-statistics-filter'},{'name': 'BookStockDetailsComponent', 'selector': 'app-book-stock-details'},{'name': 'BookStockReplenishmentComponent', 'selector': 'app-book-stock-replenishment'},{'name': 'BookStockTableComponent', 'selector': 'app-book-stock'},{'name': 'BookTableComponent', 'selector': 'app-book-table'},{'name': 'CartDialogComponent', 'selector': 'app-cart-dialog'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'ClientChangeDialogComponent', 'selector': 'app-client-change-dialog'},{'name': 'ClientInfoComponent', 'selector': 'app-client-info'},{'name': 'ClientViewComponent', 'selector': 'app-client-view'},{'name': 'ConfirmMenuComponent', 'selector': 'app-confirm-menu'},{'name': 'CreateClientComponent', 'selector': 'app-create-client'},{'name': 'ErrorAnnotatedComponent', 'selector': 'app-error-annotated'},{'name': 'GenericTableComponent', 'selector': 'app-generic-table'},{'name': 'GenreChangeDialogComponent', 'selector': 'app-genre-change-dialog'},{'name': 'GenreInputComponent', 'selector': 'app-genre-input'},{'name': 'GenreTableComponent', 'selector': 'app-genre-table'},{'name': 'InfoAnnotatedComponent', 'selector': 'app-info-annotated'},{'name': 'LibraryFilterComponent', 'selector': 'app-library-filter'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginComponent', 'selector': 'app-auth-login'},{'name': 'MainViewComponent', 'selector': 'app-main-view'},{'name': 'MakeOrderComponent', 'selector': 'app-make-order'},{'name': 'ManagerTableComponent', 'selector': 'app-manager-table'},{'name': 'OAuthCallbackComponent', 'selector': 'app-oauth-callback'},{'name': 'OrderDetailsComponent', 'selector': 'app-order-details'},{'name': 'OrderHistoryComponent', 'selector': 'app-order-history'},{'name': 'OrderTableComponent', 'selector': 'app-order-table'},{'name': 'ProductInfoComponent', 'selector': 'app-product-info'},{'name': 'ProductPageComponent', 'selector': 'app-product-page'},{'name': 'PublisherChangeDialogComponent', 'selector': 'app-publisher-change-dialog'},{'name': 'PublisherInputComponent', 'selector': 'app-publisher-input'},{'name': 'PublisherTableComponent', 'selector': 'app-publisher-table'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'ShoppingCartButtonComponent', 'selector': 'app-shopping-cart-button'},{'name': 'StatisticsChartComponent', 'selector': 'app-statistics-chart'},{'name': 'StatisticsPageComponent', 'selector': 'app-statistics-page'}];
     var DIRECTIVES = [{'name': 'InputMaxStockDirective', 'selector': '[appInputMaxStock]'},{'name': 'InputRangeDirective', 'selector': '[appInputRange]'}];
     var ACTUAL_COMPONENT = {'name': 'ProductPageComponent'};
