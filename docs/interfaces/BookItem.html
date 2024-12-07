@@ -394,7 +394,7 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
 import { map, Observable } from &#x27;rxjs&#x27;;
 import { BookService, CREATE_BOOK_COMMAND_HANDLER, CreateBookCommand, DELETE_BOOK_COMMAND_HANDLER, DeleteBookCommand, UPDATE_BOOK_COMMAND_HANDLER, UpdateBookCommand } from &#x27;../../../../../library&#x27;;
-import { Book, BookFilterRequest, CommandHandler, GenericTableComponent, defaultBookFilterRequest as getDefaultBookFilterRequest, getProductInfoPath, LocaleService, LocalizedDatePipe } from &#x27;../../../../../shared&#x27;;
+import { Book, BookFilterRequest, CommandHandler, GenericTableComponent, defaultBookFilterRequest as getDefaultBookFilterRequest, getProductInfoPath, LocaleService } from &#x27;../../../../../shared&#x27;;
 
 interface BookItem {
   id: number;
@@ -417,13 +417,11 @@ export class BookTableComponent implements OnInit {
   totalAmount$!: Observable&lt;number&gt;;
 
   private filterReq: BookFilterRequest &#x3D; getDefaultBookFilterRequest();
-  private defaultPagination &#x3D; { pageIndex: 1, pageSize: 10 };
+  private readonly defaultPagination &#x3D; { pageIndex: 1, pageSize: 10 };
   columns &#x3D; [
     { header: &#x27;Name&#x27;, field: &#x27;name&#x27;, linkPath: (item: any) &#x3D;&gt; getProductInfoPath(item.id) },
-    { header: &#x27;Publication Date&#x27;, field: &#x27;publicationDate&#x27;, pipe: new LocalizedDatePipe(this.localeService.getLocale()) },
     { header: &#x27;Author&#x27;, field: &#x27;author&#x27; },
     { header: &#x27;Genre&#x27;, field: &#x27;genre&#x27; },
-    { header: &#x27;Publisher&#x27;, field: &#x27;publisher&#x27; },
     { header: &#x27;Price&#x27;, field: &#x27;price&#x27;, pipe: new CurrencyPipe(this.localeService.getLocale(), this.localeService.getCurrency()) },
     { header: &#x27;Stock Amount&#x27;, field: &#x27;stockAmount&#x27; },
   ];
